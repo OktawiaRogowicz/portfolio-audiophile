@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="added dynamic product page, fixed data fetching from sanity">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemas/objects/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/objects/gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemas/objects/media.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/objects/media.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemas/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/product.js" afterDir="false" />
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fixed media preview, netlify build fix">
       <change beforePath="$PROJECT_DIR$/web/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670257976697</updated>
       <workItem from="1670257977856" duration="52000" />
-      <workItem from="1670258036927" duration="15319000" />
+      <workItem from="1670258036927" duration="15508000" />
     </task>
     <task id="LOCAL-00001" summary="typescript + netlify fixes">
       <created>1670273439952</created>
@@ -116,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670277780511</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed media preview, netlify build fix">
+      <created>1670282077441</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670282077441</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +142,7 @@
     <MESSAGE value="added libraries to package.json" />
     <MESSAGE value="getServerSideProps -&gt; getStaticprops" />
     <MESSAGE value="added dynamic product page, fixed data fetching from sanity" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dynamic product page, fixed data fetching from sanity" />
+    <MESSAGE value="fixed media preview, netlify build fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed media preview, netlify build fix" />
   </component>
 </project>
