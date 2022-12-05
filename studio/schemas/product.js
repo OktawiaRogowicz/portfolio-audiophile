@@ -25,7 +25,7 @@ export default {
             type: 'media',
         },
         {
-            name: 'productDndescription',
+            name: 'productDescription',
             title: 'Product description',
             type: 'blockContent',
         },
