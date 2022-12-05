@@ -6,9 +6,20 @@ export default {
     type: 'document',
     fields: [
         {
+            name: 'isNewProduct',
+            title: 'Is new product?',
+            type: 'boolean',
+            initialValue: false,
+        },
+        {
             name: 'name',
             title: 'Name',
             type: 'string'
+        },
+        {
+            name: 'price',
+            title: 'Price',
+            type: 'number'
         },
         {
             name: 'slug',
@@ -69,11 +80,17 @@ export default {
             title: 'Gallery',
             type: 'gallery',
         },
+        {
+            title: 'You might also like',
+            name: 'recommendations',
+            type: 'reference',
+            to: [{type: 'product'}]
+        }
     ],
     preview: {
         select: {
             title: 'name',
-            media: 'image'
+            media: 'image.image.asset'
         }
     }
 }

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="getServerSideProps -&gt; getStaticprops">
-      <change afterPath="$PROJECT_DIR$/studio/config/@sanity/vision.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pages/product/[slug].tsx" afterDir="false" />
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="added dynamic product page, fixed data fetching from sanity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/config/.checksums" beforeDir="false" afterPath="$PROJECT_DIR$/studio/config/.checksums" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/sanity.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/sanity.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/studio/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/schemas/objects/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/objects/gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/schemas/objects/media.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/objects/media.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/schemas/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670257976697</updated>
       <workItem from="1670257977856" duration="52000" />
-      <workItem from="1670258036927" duration="11024000" />
+      <workItem from="1670258036927" duration="15319000" />
     </task>
     <task id="LOCAL-00001" summary="typescript + netlify fixes">
       <created>1670273439952</created>
@@ -112,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670274750745</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added dynamic product page, fixed data fetching from sanity">
+      <created>1670277780511</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670277780511</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +138,7 @@
     <MESSAGE value="typescript + netlify fixes" />
     <MESSAGE value="added libraries to package.json" />
     <MESSAGE value="getServerSideProps -&gt; getStaticprops" />
-    <option name="LAST_COMMIT_MESSAGE" value="getServerSideProps -&gt; getStaticprops" />
+    <MESSAGE value="added dynamic product page, fixed data fetching from sanity" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dynamic product page, fixed data fetching from sanity" />
   </component>
 </project>

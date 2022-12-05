@@ -2,10 +2,10 @@ import groq from 'groq'
 import client from '../../client'
 
 interface Props {
-    product: any;
+    name: string,
 }
 
-const Product = ({product}: Props) => {
+const Product = (product: Props) => {
     return (
         <div>
             <span>By {product.name}</span>

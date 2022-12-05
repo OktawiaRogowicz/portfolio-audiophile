@@ -1,12 +1,20 @@
-const Preview = ({ imageSrc }: { imageSrc: string }) => (
-    <div
-        style={{
-            backgroundImage: imageSrc,
-            width: '100%',
-            height: '100%',
-        }}
-    />
-)
+import React from 'react'
+
+// const Preview = ({ imageSrc }: { imageSrc: string }) => (
+//     <div
+//         style={{
+//             display: 'flex',
+//             background: '#F1F3F6',
+//             alignItems: 'center',
+//             justifyContent: 'center',
+//             width: 35,
+//             height: 35,
+//             maxHeight: '100%',
+//         }}
+//     >
+//         <img style={{ width: '100%', height: 'auto' }} src={imageSrc} alt="" />
+//     </div>
+// )
 
 export default {
     name: 'media',
@@ -17,10 +25,12 @@ export default {
             imageUrl: `image.asset.url`,
         },
         prepare(selection) {
+            console.log(selection)
+
             const { title, imageUrl } = selection
             return {
                 title,
-                media: <Preview imageSrc={imageUrl} />,
+                media: <img alt={title} src={imageUrl} />,
             }
         },
     },

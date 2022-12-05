@@ -4,7 +4,7 @@ export default {
     type: 'array',
     of: [
         {
-            name: 'image',
+            name: 'galleryImage',
             title: 'Image',
             type: 'media',
         },
