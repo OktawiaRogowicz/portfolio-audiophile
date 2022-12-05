@@ -15,7 +15,7 @@ const Home = ({ data }: Props) => {
     )
 }
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
     const query = '*[ _type == "product"]'
     const data = await sanityClient.fetch(query)
 

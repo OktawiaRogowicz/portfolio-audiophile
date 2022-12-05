@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="added libraries to package.json">
-      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670257976697</updated>
       <workItem from="1670257977856" duration="52000" />
-      <workItem from="1670258036927" duration="8328000" />
+      <workItem from="1670258036927" duration="8472000" />
     </task>
     <task id="LOCAL-00001" summary="typescript + netlify fixes">
       <created>1670273439952</created>
@@ -90,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670274345816</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added libraries to package.json">
+      <created>1670274612777</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670274612777</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
