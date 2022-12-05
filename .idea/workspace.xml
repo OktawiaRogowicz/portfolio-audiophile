@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fixed media preview, netlify build fix">
-      <change beforePath="$PROJECT_DIR$/web/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/product/[slug].tsx" afterDir="false" />
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fallback">
+      <change beforePath="$PROJECT_DIR$/web/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/next.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670257976697</updated>
       <workItem from="1670257977856" duration="52000" />
-      <workItem from="1670258036927" duration="15508000" />
+      <workItem from="1670258036927" duration="15702000" />
     </task>
     <task id="LOCAL-00001" summary="typescript + netlify fixes">
       <created>1670273439952</created>
@@ -119,7 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670282077441</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed media preview, netlify build fix">
+      <created>1670282243044</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670282243044</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fallback">
+      <created>1670282317828</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670282317828</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +157,7 @@
     <MESSAGE value="getServerSideProps -&gt; getStaticprops" />
     <MESSAGE value="added dynamic product page, fixed data fetching from sanity" />
     <MESSAGE value="fixed media preview, netlify build fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed media preview, netlify build fix" />
+    <MESSAGE value="fallback" />
+    <option name="LAST_COMMIT_MESSAGE" value="fallback" />
   </component>
 </project>
