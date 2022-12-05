@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "prab7n4h",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "portfolio-audiophile"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    }
+  ]
+}
