@@ -1,35 +1,39 @@
-import {StyledButton} from "../libs/services/src";
-import {sanityClient} from "../libs/services/src/lib/getClient";
+import Link from 'next/link'
+import groq from 'groq'
+import client from '../client'
 
 interface Props {
-    data: any;
+    products: any;
 }
 
-const Home = ({ data }: Props) => {
-    console.log('data: ', data)
+
+const Home = ({products}: Props) => {
+    console.log("data: ", products)
     return (
         <div>
-            blep
-            <StyledButton>Button</StyledButton>
+            <h1>Welcome to a blog!</h1>
+            {products.length > 0 && products.map((product) => {
+                return <Link href={`product/${product.slug.current}`}>{product.name}</Link>
+            })}
         </div>
     )
 }
 
-export const getStaticProps = async () => {
-    const query = '*[ _type == "product"]'
-    const data = await sanityClient.fetch(query)
-
-    if (!data.length) {
-        return {
-            props: {
-                data: [],
-            },
-        }
-    } else {
-        return {
-            props: {
-                data,
-            },
+export async function getStaticProps() {
+    const products = await client.fetch(groq`
+      *[_type == "product"] {
+        name, 
+        slug,
+        image {
+        ...
+        },
+        productDescription,
+        featuresDescription,
+      }
+    `)
+    return {
+        props: {
+            products
         }
     }
 }
