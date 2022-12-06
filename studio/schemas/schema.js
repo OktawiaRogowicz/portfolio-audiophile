@@ -7,10 +7,12 @@ import product from "./product";
 import gallery from "./objects/gallery";
 import string from "./locale/String";
 import media from "./objects/media";
+import category from "./category";
 
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
+      category,
       product,
       gallery,
       blockContent,

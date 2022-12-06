@@ -17,11 +17,6 @@ export default {
             type: 'string'
         },
         {
-            name: 'price',
-            title: 'Price',
-            type: 'number'
-        },
-        {
             name: 'slug',
             title: 'Slug',
             type: 'slug',
@@ -29,6 +24,17 @@ export default {
                 source: 'name',
                 maxLength: 96
             }
+        },
+        {
+            name: 'category',
+            title: 'Category',
+            type: 'reference',
+            to: [{type: 'category'}]
+        },
+        {
+            name: 'price',
+            title: 'Price',
+            type: 'number'
         },
         {
             name: 'image',
@@ -83,8 +89,15 @@ export default {
         {
             title: 'You might also like',
             name: 'recommendations',
-            type: 'reference',
-            to: [{type: 'product'}]
+            type: 'array',
+            of: [
+                {
+                    title: 'Recommendation',
+                    name: 'recommendation',
+                    type: 'reference',
+                    to: [{type: 'product'}]
+                }
+            ]
         }
     ],
     preview: {
