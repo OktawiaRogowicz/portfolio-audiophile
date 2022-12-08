@@ -10,7 +10,7 @@ interface Props {
 const Product = ({product}: Props) => {
     return (
         <div>
-            <span>By {product.name}</span>
+            <span>By {product?.name}</span>
         </div>
     )
 }
@@ -31,13 +31,14 @@ export async function getStaticPaths() {
     )
 
     return {
-        paths: paths.map((slug: string) => ({params: {slug}})),
+        paths: paths.map((slug) => ({params: {slug}})),
         fallback: false,
     }
 }
 
 export async function getStaticProps(context) {
     const { slug = "" } = context.params
+    console.log('context: ', context)
     const product = await client.fetch(query, { slug })
     return {
         props: {

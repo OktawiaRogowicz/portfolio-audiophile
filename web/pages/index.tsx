@@ -1,41 +1,27 @@
-import Link from 'next/link'
-import groq from 'groq'
-import client from '../client'
+import groq from "groq";
+import client from "../client";
+import { globalStyles, styled } from "@portfolio-audiophile/styles";
+import { Container } from "../libs/services/src/lib/Container";
+
+const Test = styled("div", {
+  height: "100vh",
+});
 
 interface Props {
-    products: any;
+  header: {
+    menu: any[];
+  };
 }
 
+const Home = ({ header }: Props) => {
+  globalStyles();
+  return (
+    <Container backgroundColor={"black"}>
+      <Test>
+        <h1>Welcome to sssda blog!</h1>
+      </Test>
+    </Container>
+  );
+};
 
-const Home = ({products}: Props) => {
-    console.log("data: ", products)
-    return (
-        <div>
-            <h1>Welcome to a blog!</h1>
-            {products.length > 0 && products.map((product) => {
-                return <Link href={`product/${product.slug.current}`}>{product.name}</Link>
-            })}
-        </div>
-    )
-}
-
-export async function getStaticProps() {
-    const products = await client.fetch(groq`
-      *[_type == "product"] {
-        name, 
-        slug,
-        image {
-        ...
-        },
-        productDescription,
-        featuresDescription,
-      }
-    `)
-    return {
-        props: {
-            products
-        }
-    }
-}
-
-export default Home
+export default Home;

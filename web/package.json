@@ -14,16 +14,34 @@
   "license": "ISC",
   "dependencies": {
     "@sanity/client": "^3.4.1",
+    "@sanity/image-url": "^1.0.1",
+    "@stitches/react": "1.2.8",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
-    "@stitches/react": "1.2.8",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
     "next": "13.0.5",
     "next-sanity": "0.8.4",
+    "prettier": "^2.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "tslib": "^2.3.0",
     "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "@nrwl/eslint-plugin-nx": "15.2.4",
+    "@nrwl/jest": "15.2.4",
+    "@nrwl/linter": "15.2.4",
+    "@nrwl/next": "^15.2.4",
+    "@types/jest": "28.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint-config-prettier": "8.1.0",
+    "jest": "28.1.1",
+    "jest-environment-jsdom": "28.1.1",
+    "nx": "15.3.0",
+    "ts-jest": "28.0.5",
+    "ts-node": "10.9.1"
   }
 }

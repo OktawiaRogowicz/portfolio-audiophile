@@ -1,13 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="[slug] fix">
-      <change afterPath="$PROJECT_DIR$/studio/schemas/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pages/category/[slug].tsx" afterDir="false" />
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="feat: stitches, header">
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studio/schemas/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studio/schemas/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studio/schemas/siteConfiguration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studio/src/dashboardConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/studio/src/deskStructure/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/components/Image.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icons/ArrowIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icons/CartIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icons/HamburgerIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jest.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jest.preset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/CategoryHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Footer/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Footer/FooterMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Link.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPreview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/StyledClickable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/jest.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/project.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/src/lib/fonts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/src/lib/globalStyles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/src/lib/sizes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/src/lib/stitches.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/tsconfig.lib.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libs/styles/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/nx.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pages/_app.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/sanity.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemas/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/sanity.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/sanity.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studio/schemas/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/studio/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libs/services/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/StyledButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/category/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/category/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/product/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +65,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -48,20 +95,32 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/icons" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/web/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/web/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/icons" />
+      <recent name="$PROJECT_DIR$/web/libs/styles/src/lib" />
       <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/studio/schemas/locale" />
-      <recent name="$PROJECT_DIR$/studio/schemas/objects" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/web/libs/services/src/lib" />
+      <recent name="$PROJECT_DIR$/web/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/libs/services/src/lib/Footer" />
+      <recent name="$PROJECT_DIR$/web/libs/services/src/lib" />
+      <recent name="$PROJECT_DIR$/web/libs/header/src/lib" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,6 +133,7 @@
       <updated>1670257976697</updated>
       <workItem from="1670257977856" duration="52000" />
       <workItem from="1670258036927" duration="20383000" />
+      <workItem from="1670328604193" duration="25309000" />
     </task>
     <task id="LOCAL-00001" summary="typescript + netlify fixes">
       <created>1670273439952</created>
@@ -156,7 +216,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -171,6 +243,11 @@
     <MESSAGE value="fixed media preview, netlify build fix" />
     <MESSAGE value="fallback" />
     <MESSAGE value="[slug] fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="[slug] fix" />
+    <MESSAGE value="feat: stitches, header" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: stitches, header" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
