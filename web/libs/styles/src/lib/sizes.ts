@@ -18,8 +18,10 @@ export const sizes = {
   72: "72px",
   80: "80px",
   96: "96px",
+  108: "108px",
   120: "120px",
   144: "144px",
+  160: "160px",
   168: "168px",
   192: "192px",
   240: "240px",
@@ -29,5 +31,6 @@ export const sizes = {
   containerMarginMobile: "16px",
   containerMarginTablet: "40px",
   containerMarginDesktop: "165px",
+  maxWidthXS: "440px",
   maxWidthS: "560px",
 };

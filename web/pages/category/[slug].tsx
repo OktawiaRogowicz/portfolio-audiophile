@@ -1,13 +1,22 @@
 import groq from "groq";
 import client from "../../client";
-import Link from "next/link";
 import { styled } from "@portfolio-audiophile/styles";
 import { Container } from "../../libs/services/src/lib/Container";
 import { CategoryHeader } from "../../libs/services/src/lib/CategoryHeader";
-import { ProductPreview } from "../../libs/services/src/lib/ProductPreview";
+import { ProductPreviews } from "../../libs/services/src/lib/CategoryPage/ProductPreviews";
+import { CategoriesMini } from "../../libs/services/src/lib/CategoriesMini";
+import { SectionImageAndContent } from "../../libs/services/src/lib/SectionImageAndContent";
+import { getSiteConfiguration } from "../../libs/services/src/lib/getSiteConfiguration";
+import { SiteConfiguration } from "../../libs/services/src/lib/models/site-configuration";
 
 const Root = styled("div", {
-  padding: "$168 0",
+  padding: "$64 0",
+  "@md": {
+    padding: "$120 0",
+  },
+  "@lg": {
+    padding: "$160 0",
+  },
 });
 
 interface Props {
@@ -20,20 +29,21 @@ interface Props {
       };
     }[];
   };
+  siteConfiguration: SiteConfiguration;
 }
 
-const Category = ({ category }: Props) => {
+const Category = ({ category, siteConfiguration }: Props) => {
   return (
     <>
       <CategoryHeader categoryName={category.name} />
       <Container backgroundColor={"white"}>
         <Root>
-          {category.products &&
-            category.products.length > 0 &&
-            category.products.map((product) => {
-              return <ProductPreview product={product} />;
-            })}
+          <ProductPreviews products={category.products} />
         </Root>
+        <CategoriesMini
+          miniCategories={siteConfiguration.siteConfiguration.miniCategories}
+        />
+        <SectionImageAndContent siteConfiguration={siteConfiguration} />
       </Container>
     </>
   );
@@ -47,6 +57,7 @@ const query = groq`*[_type == "category" && slug.current == $slug][0]{
         isNewProduct,
         name,
         slug,
+        category,
         image {
             ...
         },
@@ -59,7 +70,6 @@ export async function getStaticPaths() {
   const paths = await client.fetch(
     groq`*[_type == "category" && defined(slug.current)][].slug.current`
   );
-  console.log("paths: ", paths);
 
   return {
     paths: paths.map((slug) => ({ params: { slug } })),
@@ -69,11 +79,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const { slug = "" } = context.params;
-  console.log("context: ", context);
   const category = await client.fetch(query, { slug });
+  const siteConfiguration = await getSiteConfiguration();
   return {
     props: {
       category,
+      siteConfiguration,
     },
   };
 }

@@ -2,6 +2,7 @@ import { styled } from "@portfolio-audiophile/styles";
 import React, { FC } from "react";
 
 const Root = styled("div", {
+  width: "100vw",
   variants: {
     backgroundColor: {
       black: {

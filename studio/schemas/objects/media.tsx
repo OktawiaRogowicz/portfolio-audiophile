@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 // const Preview = ({ imageSrc }: { imageSrc: string }) => (
 //     <div
@@ -17,46 +17,44 @@ import React from 'react'
 // )
 
 export default {
-    name: 'media',
-    type: 'object',
-    preview: {
-        select: {
-            title: 'image.asset.originalFilename',
-            imageUrl: `image.asset.url`,
-        },
-        prepare(selection) {
-            console.log(selection)
-
-            const { title, imageUrl } = selection
-            return {
-                title,
-                media: <img alt={title} src={imageUrl} />,
-            }
-        },
+  name: "media",
+  type: "object",
+  preview: {
+    select: {
+      title: "image.asset.originalFilename",
+      imageUrl: `image.asset.url`,
     },
-    fields: [
-        {
-            name: 'image',
-            title: 'Image',
-            type: 'image',
-            options: {
-                hotspot: true
-            }
-        },
-        {
-            name: 'overrideMobileImage',
-            title: 'Override mobile image?',
-            type: 'boolean',
-            initialValue: false,
-        },
-        {
-            name: 'mobileImage',
-            title: 'Mobile image',
-            type: 'image',
-            hidden: ({ parent }) => parent?.overrideMobileImage === false,
-            options: {
-                hotspot: true
-            }
-        },
-    ],
-}
+    prepare(selection) {
+      const { title, imageUrl } = selection;
+      return {
+        title,
+        media: <img alt={title} src={imageUrl} />,
+      };
+    },
+  },
+  fields: [
+    {
+      name: "image",
+      title: "Image",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "overrideMobileImage",
+      title: "Override mobile image?",
+      type: "boolean",
+      initialValue: false,
+    },
+    {
+      name: "mobileImage",
+      title: "Mobile image",
+      type: "image",
+      hidden: ({ parent }) => parent?.overrideMobileImage === false,
+      options: {
+        hotspot: true,
+      },
+    },
+  ],
+};

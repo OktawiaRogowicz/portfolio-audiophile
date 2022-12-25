@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { styled } from "@portfolio-audiophile/styles";
 import { Container } from "./Container";
-import Image from "../../../../components/Image";
+import Media from "../../../../components/Media";
 import { Link } from "./Link";
 import { CartIcon } from "../../../../icons/CartIcon";
 import { HamburgerIcon } from "../../../../icons/HamburgerIcon";
@@ -77,7 +77,7 @@ export const Header: FC<HeaderProps> = ({ header }) => {
           <HamburgerIcon />
         </MenuHamburger>
         <LogoContainer>
-          {header?.logo && <Image image={header.logo.image} />}
+          {header?.logo && <Media image={header.logo.image} />}
         </LogoContainer>
         {header?.menu?.length > 0 && (
           <MenuContainerDesktop>

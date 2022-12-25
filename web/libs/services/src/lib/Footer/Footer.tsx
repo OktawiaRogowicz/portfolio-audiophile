@@ -2,21 +2,22 @@ import { FC } from "react";
 import { styled } from "@portfolio-audiophile/styles";
 import SanityBlockContent from "@sanity/block-content-to-react";
 import { Container } from "../Container";
-import { Header } from "../Header";
-import Image from "../../../../../components/Image";
+import Media from "../../../../../components/Media";
 import { Link } from "../Link";
 import { FooterMenu } from "./FooterMenu";
 
 const Root = styled("div", {
-  position: "relative",
   display: "grid",
+  maxWidth: "100%",
+  minWidth: "100%",
+  position: "relative",
   padding: "$40 0 $48 0",
   backgroundColor: "$black",
   justifyContent: "center",
   alignItems: "center",
   gap: "$48",
   "@md": {
-    justifyContent: "left",
+    justifyContent: "center",
     gap: "$32",
     padding: "$56 0 $48 0",
   },
@@ -82,10 +83,9 @@ export type FooterProps = {
 };
 
 export const Footer: FC<FooterProps> = ({ header, footer }) => {
-  console.log("footer items: ", footer.socialMedia);
   return (
     <Root>
-      <OrangeLine />
+      {/*<OrangeLine />*/}
       <FooterMenu header={header} />
       <Container backgroundColor={"black"}>
         <ContentContainer>
@@ -97,7 +97,7 @@ export const Footer: FC<FooterProps> = ({ header, footer }) => {
             {footer.socialMedia.map((item) => {
               return (
                 <Link href={"/test"}>
-                  <Image image={item.logo.image} />
+                  <Media image={item.logo.image} />
                 </Link>
               );
             })}

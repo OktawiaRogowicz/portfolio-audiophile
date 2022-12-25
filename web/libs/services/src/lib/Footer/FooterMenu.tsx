@@ -1,11 +1,10 @@
 import { FC } from "react";
 import { styled } from "@portfolio-audiophile/styles";
 import { Container } from "../Container";
-import Image from "../../../../../components/Image";
+import Media from "../../../../../components/Media";
 import { Link } from "../Link";
 
 const Root = styled("div", {
-  width: "100%",
   display: "grid",
   height: "auto",
   gridTemplateColumns: "1fr",
@@ -58,7 +57,7 @@ export const FooterMenu: FC<FooterMenuProps> = ({ header }) => {
     <Container backgroundColor={"black"}>
       <Root>
         <LogoContainer>
-          {header?.logo && <Image image={header.logo.image} />}
+          {header?.logo && <Media image={header.logo.image} />}
         </LogoContainer>
         {header?.menu?.length > 0 && (
           <MenuContainer>

@@ -1,6 +1,7 @@
 import { createStitches } from "@stitches/react";
 import { getFontStyles } from "./fonts";
 import { sizes } from "./sizes";
+import { radius } from "./radius";
 
 export const {
   styled,
@@ -22,7 +23,9 @@ export const {
       white02: "rgba(255, 255, 255, 0.2)",
       lightBlack: "#101010",
       black: "#000000",
+      black05: "rgba(0, 0, 0, 0.5)",
     },
+    // radii: radius,
     space: sizes,
     sizes,
   },

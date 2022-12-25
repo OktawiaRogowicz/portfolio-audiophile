@@ -29,7 +29,7 @@ export const fonts = {
   heading03: {
     fontSize: 32,
     lineHeight: "36px",
-    letterSpacing: "1.15px",
+    letterSpacing: "1.2px",
     textTransform: "uppercase",
     ...MANROPE_BOLD,
   },
@@ -72,6 +72,12 @@ export const fonts = {
     fontSize: 15,
     lineHeight: "25px",
     ...MANROPE_MEDIUM,
+  },
+  button: {
+    fontSize: 13,
+    letterSpacing: "1px",
+    textTransform: "uppercase",
+    ...MANROPE_BOLD,
   },
 };
 
