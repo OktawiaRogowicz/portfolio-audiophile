@@ -8,6 +8,7 @@ import { HamburgerIcon } from "../../../../icons/HamburgerIcon";
 import { StyledClickable } from "./StyledClickable";
 
 const Root = styled("div", {
+  zIndex: "1",
   position: "relative",
   display: "grid",
   gridTemplateColumns: "auto 1fr auto",

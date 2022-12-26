@@ -28,9 +28,11 @@ export const sizes = {
   288: "288px",
   378: "378px",
   416: "416px",
+  headerHeight: "96px",
   containerMarginMobile: "16px",
   containerMarginTablet: "40px",
   containerMarginDesktop: "165px",
+  maxWidthXXS: "350px",
   maxWidthXS: "440px",
   maxWidthS: "560px",
 };

@@ -29,7 +29,11 @@ const Product = ({ product, siteConfiguration }: Props) => {
       <CategoriesMini
         miniCategories={siteConfiguration.siteConfiguration.miniCategories}
       />
-      <SectionImageAndContent siteConfiguration={siteConfiguration} />
+      <SectionImageAndContent
+        sectionImageAndContentSettings={
+          siteConfiguration.siteConfiguration.sectionImageAndContent
+        }
+      />
     </Container>
   );
 };

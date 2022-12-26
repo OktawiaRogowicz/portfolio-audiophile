@@ -1,47 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="feat: stitches, header">
-      <change afterPath="$PROJECT_DIR$/web/components/Media.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/components/StyledInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/components/StyledNumberInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Buttons/GoBackButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/CategoriesMini.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/CategoryPage/ProductPreview.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/CategoryPage/ProductPreviews.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/FeaturesDescription.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/Gallery.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/ProductDetails.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/Recommendations.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/SectionImageAndContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/SectionWrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/getSiteConfiguration.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/models/site-configuration.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/styles/src/lib/radius.ts" afterDir="false" />
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="feat: added section image and content, features description, gallery, mini categories, section wrapper, recommendations, getSiteConfiguration">
+      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionHero.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/studio/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemas/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemas/objects/media.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/objects/media.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studio/schemas/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studio/schemas/siteConfiguration.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/siteConfiguration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/src/deskStructure/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/studio/src/deskStructure/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/studio/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/components/Image.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/CategoriesMini.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/CategoriesMini.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Footer/FooterMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Footer/FooterMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPreview.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/StyledClickable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/StyledClickable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/src/lib/fonts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/styles/src/lib/fonts.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/src/lib/globalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/styles/src/lib/globalStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/SectionImageAndContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/SectionImageAndContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/SectionWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/SectionWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/getSiteConfiguration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/getSiteConfiguration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/models/site-configuration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/models/site-configuration.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libs/styles/src/lib/sizes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/styles/src/lib/sizes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/src/lib/stitches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/styles/src/lib/stitches.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/pages/category/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/category/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,8 +28,8 @@
       <list>
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -195,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670282456132</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: added section image and content, features description, gallery, mini categories, section wrapper, recommendations, getSiteConfiguration">
+      <created>1672000454715</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672000454715</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +215,8 @@
     <MESSAGE value="fallback" />
     <MESSAGE value="[slug] fix" />
     <MESSAGE value="feat: stitches, header" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: stitches, header" />
+    <MESSAGE value="feat: added section image and content, features description, gallery, mini categories, section wrapper, recommendations, getSiteConfiguration" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added section image and content, features description, gallery, mini categories, section wrapper, recommendations, getSiteConfiguration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -243,6 +225,11 @@
           <url>file://$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/Recommendations.tsx</url>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionHero.tsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

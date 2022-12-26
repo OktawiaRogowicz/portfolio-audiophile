@@ -1,27 +1,36 @@
-import groq from "groq";
-import client from "../client";
-import { globalStyles, styled } from "@portfolio-audiophile/styles";
 import { Container } from "../libs/services/src/lib/Container";
-
-const Test = styled("div", {
-  height: "100vh",
-});
+import { SectionHero } from "../libs/services/src/lib/Homepage/SectionHero";
+import { getSiteConfiguration } from "../libs/services/src/lib/getSiteConfiguration";
+import { SiteConfiguration } from "../libs/services/src/lib/models/site-configuration";
+import { CategoriesMini } from "../libs/services/src/lib/CategoriesMini";
+import { SectionImageAndContent } from "../libs/services/src/lib/SectionImageAndContent";
 
 interface Props {
-  header: {
-    menu: any[];
-  };
+  siteConfiguration: SiteConfiguration["siteConfiguration"];
 }
 
-const Home = ({ header }: Props) => {
-  globalStyles();
+const Home = ({ siteConfiguration }: Props) => {
+  console.log("siteConfiguration: ", siteConfiguration);
   return (
-    <Container backgroundColor={"black"}>
-      <Test>
-        <h1>Welcome to sssda blog!</h1>
-      </Test>
+    <Container backgroundColor={"transparent"}>
+      <SectionHero sectionHeroSettings={siteConfiguration.sectionHero} />
+      <CategoriesMini miniCategories={siteConfiguration.miniCategories} />
+      <SectionImageAndContent
+        sectionImageAndContentSettings={
+          siteConfiguration.sectionImageAndContent
+        }
+      />
     </Container>
   );
 };
+
+async function getStaticProps() {
+  const siteConfiguration = await getSiteConfiguration();
+  return {
+    props: {
+      siteConfiguration,
+    },
+  };
+}
 
 export default Home;

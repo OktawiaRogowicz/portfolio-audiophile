@@ -22,12 +22,12 @@ const Root = styled("div", {
 });
 
 export type SectionWrapperProps = {
-  margin: "M" | "none";
+  margin?: "M" | "none";
   children: React.ReactNode;
 };
 
 export const SectionWrapper: FC<SectionWrapperProps> = ({
-  margin,
+  margin = "M",
   children,
 }) => {
   return <Root margin={margin}>{children}</Root>;

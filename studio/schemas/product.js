@@ -42,6 +42,13 @@ export default {
       type: "media",
     },
     {
+      name: "heroImage",
+      title: "Hero image",
+      description:
+        "Image used if product is chosen to be in Section Hero (homepage)",
+      type: "media",
+    },
+    {
       name: "productDescription",
       title: "Product description",
       type: "blockContent",

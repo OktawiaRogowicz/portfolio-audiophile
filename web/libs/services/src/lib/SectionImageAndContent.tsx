@@ -34,35 +34,25 @@ const Image = styled("div", {
 });
 
 export type SectionImageAndContentProps = {
-  siteConfiguration: SiteConfiguration;
+  sectionImageAndContentSettings: SiteConfiguration["siteConfiguration"]["sectionImageAndContent"];
 };
 
 export const SectionImageAndContent: FC<SectionImageAndContentProps> = ({
-  siteConfiguration,
+  sectionImageAndContentSettings,
 }) => {
   return (
     <SectionWrapper margin={"M"}>
       <Root>
         <ContentContainer>
-          <Title>
-            {siteConfiguration.siteConfiguration.sectionImageAndContent.title}
-          </Title>
+          <Title>{sectionImageAndContentSettings.title}</Title>
           <Description>
             <SanityBlockContent
-              blocks={
-                siteConfiguration.siteConfiguration.sectionImageAndContent
-                  .description
-              }
+              blocks={sectionImageAndContentSettings.description}
             />
           </Description>
         </ContentContainer>
         <Image>
-          <Media
-            image={
-              siteConfiguration.siteConfiguration.sectionImageAndContent.image
-                .image
-            }
-          />
+          <Media image={sectionImageAndContentSettings.image.image} />
         </Image>
       </Root>
     </SectionWrapper>

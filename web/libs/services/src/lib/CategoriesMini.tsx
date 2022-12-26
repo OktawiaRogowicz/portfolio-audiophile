@@ -4,6 +4,7 @@ import Media from "../../../../components/Media";
 import { StyledClickable } from "./StyledClickable";
 import { ArrowIcon } from "../../../../icons/ArrowIcon";
 import { Link } from "./Link";
+import { SectionWrapper } from "./SectionWrapper";
 
 const Root = styled("div", {
   display: "grid",
@@ -49,22 +50,24 @@ export type CategoriesMiniProps = {
 
 export const CategoriesMini: FC<CategoriesMiniProps> = ({ miniCategories }) => {
   return (
-    <Root>
-      {miniCategories?.length > 0 &&
-        miniCategories.map((item) => {
-          return (
-            <MiniCategoryContainer>
-              <MiniCategoryImage>
-                <Media image={item.link.image.image} />
-              </MiniCategoryImage>
-              {item.link.name}
-              <Link appearance={"plain"} href={`/category/${item.link.href}`}>
-                Shop
-                <ArrowIcon />
-              </Link>
-            </MiniCategoryContainer>
-          );
-        })}
-    </Root>
+    <SectionWrapper>
+      <Root>
+        {miniCategories?.length > 0 &&
+          miniCategories.map((item) => {
+            return (
+              <MiniCategoryContainer>
+                <MiniCategoryImage>
+                  <Media image={item.link.image.image} />
+                </MiniCategoryImage>
+                {item.link.name}
+                <Link appearance={"plain"} href={`/category/${item.link.href}`}>
+                  Shop
+                  <ArrowIcon />
+                </Link>
+              </MiniCategoryContainer>
+            );
+          })}
+      </Root>
+    </SectionWrapper>
   );
 };

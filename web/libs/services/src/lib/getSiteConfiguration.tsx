@@ -26,6 +26,18 @@ export const getSiteConfiguration = async (): Promise<SiteConfiguration> => {
 
   const siteConfigurationProjection = groq`
       *[_type == "siteConfiguration"][0]{
+        sectionHero {
+          ...,
+          description,
+          "product": *[_type == "product" && _id == ^.product._ref][0] {
+            isNewProduct,
+            name,
+            "href": slug.current,
+            heroImage {
+              ...
+            },
+          },
+        },
         sectionImageAndContent {
           title,
           description,

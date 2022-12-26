@@ -8,6 +8,10 @@ export type SiteConfiguration = {
     socialMedia: any;
   };
   siteConfiguration: {
+    sectionHero: {
+      product: any;
+      description: SanityBlockContentProps["blocks"];
+    };
     sectionImageAndContent: {
       title: string;
       description: SanityBlockContentProps["blocks"];
