@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: @sanity/block-content-to-react">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/CategoryPage/ProductPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/CategoryPage/ProductPreview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionHero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured/BigHighlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured/BigHighlight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/FeaturesDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/FeaturesDescription.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/ProductDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/SectionImageAndContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/SectionImageAndContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/product.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models/site-configuration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/site-configuration.ts" afterDir="false" />
-    </list>
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: migration from @sanity/block-content-to-react to @portabletext/react" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672158274717</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix: migration from @sanity/block-content-to-react to @portabletext/react">
+      <created>1672158714372</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1672158714372</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +231,8 @@
     <MESSAGE value="feat: added sectionHero" />
     <MESSAGE value="feat: added highlights on main page" />
     <MESSAGE value="fix: @sanity/block-content-to-react" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: @sanity/block-content-to-react" />
+    <MESSAGE value="fix: migration from @sanity/block-content-to-react to @portabletext/react" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: migration from @sanity/block-content-to-react to @portabletext/react" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
