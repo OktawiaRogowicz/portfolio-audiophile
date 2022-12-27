@@ -1,5 +1,5 @@
 import groq from "groq";
-import { SiteConfiguration } from "./models/site-configuration";
+import { SiteConfiguration } from "../../../../models/site-configuration";
 import { sanityClient } from "./getClient";
 
 export const getSiteConfiguration = async (): Promise<SiteConfiguration> => {
@@ -24,6 +24,24 @@ export const getSiteConfiguration = async (): Promise<SiteConfiguration> => {
       }
 `;
 
+  const highlightProjection = groq`
+      {
+        name,
+        slug {...},
+        sectionImages {
+          bigHighlight {
+            ...,
+          },
+          mediumHighlight {
+            ...,
+          },
+          smallHighlight {
+            ...,
+          },
+        },
+      }
+  `;
+
   const siteConfigurationProjection = groq`
       *[_type == "siteConfiguration"][0]{
         sectionHero {
@@ -33,10 +51,18 @@ export const getSiteConfiguration = async (): Promise<SiteConfiguration> => {
             isNewProduct,
             name,
             "href": slug.current,
-            heroImage {
-              ...
+            sectionImages {
+              heroImage {
+                ...,
+              },
             },
           },
+        },
+        sectionProductsFeatured {
+          "bigHighlight": *[_type == "product" && _id == ^.bigHighlight._ref][0]${highlightProjection},
+          description,
+          "mediumHighlight": *[_type == "product" && _id == ^.mediumHighlight._ref][0]${highlightProjection},
+          "smallHighlight": *[_type == "product" && _id == ^.smallHighlight._ref][0]${highlightProjection},
         },
         sectionImageAndContent {
           title,

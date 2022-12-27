@@ -6,15 +6,15 @@ import { Link } from "../Link";
 
 const Root = styled("div", {
   display: "grid",
-  gap: "$32",
+  gap: "0 $32",
   justifyContent: "center",
   gridTemplateRows: "auto 1fr",
   "@md": {
-    gap: "$56",
+    gap: "0 $56",
   },
   "@lg": {
     gridTemplateColumns: "1fr 1fr",
-    gap: "$120",
+    gap: "0 $120",
   },
 });
 
@@ -104,6 +104,7 @@ const Description = styled("div", {
   display: "grid",
   justifyContent: "center",
   projectFont: "body01",
+  color: "$black05",
   div: {
     maxWidth: "$maxWidthXS",
   },

@@ -8,7 +8,7 @@ import { Recommendations } from "../../libs/services/src/lib/ProductPage/Recomme
 import GoBackButton from "../../libs/services/src/lib/Buttons/GoBackButton";
 import { SectionImageAndContent } from "../../libs/services/src/lib/SectionImageAndContent";
 import { getSiteConfiguration } from "../../libs/services/src/lib/getSiteConfiguration";
-import { SiteConfiguration } from "../../libs/services/src/lib/models/site-configuration";
+import { SiteConfiguration } from "../../models/site-configuration";
 import { CategoriesMini } from "../../libs/services/src/lib/CategoriesMini";
 
 interface Props {

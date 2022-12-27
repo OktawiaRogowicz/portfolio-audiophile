@@ -1,4 +1,5 @@
 import { BlockContentProps as SanityBlockContentProps } from "@sanity/block-content-to-react";
+import { Product } from "./product";
 
 export type SiteConfiguration = {
   header: any;
@@ -9,8 +10,14 @@ export type SiteConfiguration = {
   };
   siteConfiguration: {
     sectionHero: {
-      product: any;
+      product: Product;
       description: SanityBlockContentProps["blocks"];
+    };
+    sectionProductsFeatured: {
+      bigHighlight: Product;
+      description: SanityBlockContentProps["blocks"];
+      mediumHighlight: Product;
+      smallHighlight: Product;
     };
     sectionImageAndContent: {
       title: string;

@@ -1,9 +1,10 @@
 import { Container } from "../libs/services/src/lib/Container";
 import { SectionHero } from "../libs/services/src/lib/Homepage/SectionHero";
 import { getSiteConfiguration } from "../libs/services/src/lib/getSiteConfiguration";
-import { SiteConfiguration } from "../libs/services/src/lib/models/site-configuration";
+import { SiteConfiguration } from "../models/site-configuration";
 import { CategoriesMini } from "../libs/services/src/lib/CategoriesMini";
 import { SectionImageAndContent } from "../libs/services/src/lib/SectionImageAndContent";
+import { SectionProductsFeatured } from "../libs/services/src/lib/Homepage/SectionProductsFeatured/SectionProductsFeatured";
 
 interface Props {
   siteConfiguration: SiteConfiguration["siteConfiguration"];
@@ -15,6 +16,9 @@ const Home = ({ siteConfiguration }: Props) => {
     <Container backgroundColor={"transparent"}>
       <SectionHero sectionHeroSettings={siteConfiguration.sectionHero} />
       <CategoriesMini miniCategories={siteConfiguration.miniCategories} />
+      <SectionProductsFeatured
+        productsFeatured={siteConfiguration.sectionProductsFeatured}
+      />
       <SectionImageAndContent
         sectionImageAndContentSettings={
           siteConfiguration.sectionImageAndContent

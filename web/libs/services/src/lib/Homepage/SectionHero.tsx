@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { styled } from "@portfolio-audiophile/styles";
 import SanityBlockContent from "@sanity/block-content-to-react";
-import { SiteConfiguration } from "../models/site-configuration";
+import { SiteConfiguration } from "../../../../../models/site-configuration";
 import Media from "../../../../../components/Media";
 import { Link } from "../Link";
 
@@ -53,7 +53,6 @@ const BackgroundImage = styled("div", {
   left: 0,
   right: 0,
   height: "729px",
-  backgroundColor: "pink",
   img: {
     height: "100%",
     width: "100%",
@@ -66,10 +65,13 @@ export type SectionHeroProps = {
 };
 
 export const SectionHero: FC<SectionHeroProps> = ({ sectionHeroSettings }) => {
+  console.log("sectionHeroSettings: ", sectionHeroSettings);
   return (
     <>
       <BackgroundImage>
-        <Media image={sectionHeroSettings.product.heroImage.image} />
+        <Media
+          image={sectionHeroSettings.product.sectionImages.heroImage.image}
+        />
       </BackgroundImage>
       <Root>
         <ContentContainer>

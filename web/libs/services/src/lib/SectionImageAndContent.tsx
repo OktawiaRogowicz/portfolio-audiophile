@@ -3,23 +3,39 @@ import { styled } from "@portfolio-audiophile/styles";
 import { SectionWrapper } from "./SectionWrapper";
 import Media from "../../../../components/Media";
 import SanityBlockContent from "@sanity/block-content-to-react";
-import { SiteConfiguration } from "./models/site-configuration";
+import { SiteConfiguration } from "../../../../models/site-configuration";
 
 const Root = styled("div", {
   display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gap: "$120",
+  gridAutoFlow: "rows",
+  gap: "$40",
+  "@md": {
+    gap: "$64",
+  },
+  "@lg": {
+    gridAutoFlow: "columns",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "$120",
+  },
 });
 
 const ContentContainer = styled("div", {
   display: "grid",
   gridTemplateRows: "auto 1fr",
   gap: "$32",
+  order: 2,
+  textAlign: "center",
+  "@lg": {
+    order: 1,
+    textAlign: "left",
+  },
 });
 
 const Title = styled("div", {
-  paddingTop: "$108",
   projectFont: "heading02",
+  "@lg": {
+    paddingTop: "$108",
+  },
 });
 
 const Description = styled("div", {
@@ -28,8 +44,15 @@ const Description = styled("div", {
 });
 
 const Image = styled("div", {
+  order: 1,
   img: {
     borderRadius: "10px",
+    height: "100%",
+    width: "100%",
+    objectFit: "cover",
+  },
+  "@lg": {
+    order: 2,
   },
 });
 

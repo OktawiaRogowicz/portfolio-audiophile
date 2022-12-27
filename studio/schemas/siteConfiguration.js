@@ -25,6 +25,36 @@ export default {
       ],
     },
     {
+      name: "sectionProductsFeatured",
+      title: "Section Products Featured",
+      type: "object",
+      fields: [
+        {
+          title: "Big highlight",
+          name: "bigHighlight",
+          type: "reference",
+          to: [{ type: "product" }],
+        },
+        {
+          name: "description",
+          title: "Big highlight description",
+          type: "blockContent",
+        },
+        {
+          title: "Medium highlight",
+          name: "mediumHighlight",
+          type: "reference",
+          to: [{ type: "product" }],
+        },
+        {
+          title: "Small highlight",
+          name: "smallHighlight",
+          type: "reference",
+          to: [{ type: "product" }],
+        },
+      ],
+    },
+    {
       name: "sectionImageAndContent",
       title: "Section Image and Content",
       type: "object",

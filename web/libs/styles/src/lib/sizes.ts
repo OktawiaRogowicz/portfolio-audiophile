@@ -29,7 +29,7 @@ export const sizes = {
   378: "378px",
   416: "416px",
   headerHeight: "96px",
-  containerMarginMobile: "16px",
+  containerMarginMobile: "24px",
   containerMarginTablet: "40px",
   containerMarginDesktop: "165px",
   maxWidthXXS: "350px",

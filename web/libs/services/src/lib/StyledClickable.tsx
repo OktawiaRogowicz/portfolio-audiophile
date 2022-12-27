@@ -28,7 +28,16 @@ export const StyledClickable = styled("button", {
         },
       },
       secondary: {
-        backgroundColor: "red",
+        height: "$48",
+        padding: "0 $32",
+        backgroundColor: "transparent",
+        projectFont: "button",
+        color: "$black",
+        border: "1px solid $black",
+        "&:hover": {
+          backgroundColor: "$black",
+          color: "$white",
+        },
       },
       tertiary: {
         backgroundColor: "blue",

@@ -42,11 +42,39 @@ export default {
       type: "media",
     },
     {
-      name: "heroImage",
-      title: "Hero image",
-      description:
-        "Image used if product is chosen to be in Section Hero (homepage)",
-      type: "media",
+      name: "sectionImages",
+      title: "Section Images",
+      type: "object",
+      fields: [
+        {
+          name: "heroImage",
+          title: "Hero image",
+          description:
+            "Image used if product is chosen to be in Section Hero (homepage)",
+          type: "media",
+        },
+        {
+          name: "bigHighlight",
+          title: "Big highlight image",
+          description:
+            "Image used if product is chosen to be in Section Products Features: Big highlight (homepage)",
+          type: "media",
+        },
+        {
+          name: "mediumHighlight",
+          title: "Medium highlight image",
+          description:
+            "Image used if product is chosen to be in Section Products Features: Medium highlight (homepage)",
+          type: "media",
+        },
+        {
+          name: "smallHighlight",
+          title: "Small highlight image",
+          description:
+            "Image used if product is chosen to be in Section Products Features: Small highlight (homepage)",
+          type: "media",
+        },
+      ],
     },
     {
       name: "productDescription",

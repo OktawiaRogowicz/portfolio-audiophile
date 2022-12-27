@@ -7,17 +7,7 @@ import { ProductPreviews } from "../../libs/services/src/lib/CategoryPage/Produc
 import { CategoriesMini } from "../../libs/services/src/lib/CategoriesMini";
 import { SectionImageAndContent } from "../../libs/services/src/lib/SectionImageAndContent";
 import { getSiteConfiguration } from "../../libs/services/src/lib/getSiteConfiguration";
-import { SiteConfiguration } from "../../libs/services/src/lib/models/site-configuration";
-
-const Root = styled("div", {
-  padding: "$64 0",
-  "@md": {
-    padding: "$120 0",
-  },
-  "@lg": {
-    padding: "$160 0",
-  },
-});
+import { SiteConfiguration } from "../../models/site-configuration";
 
 interface Props {
   category: {
@@ -37,9 +27,7 @@ const Category = ({ category, siteConfiguration }: Props) => {
     <>
       <CategoryHeader categoryName={category.name} />
       <Container backgroundColor={"white"}>
-        <Root>
-          <ProductPreviews products={category.products} />
-        </Root>
+        <ProductPreviews products={category.products} />
         <CategoriesMini
           miniCategories={siteConfiguration.siteConfiguration.miniCategories}
         />
