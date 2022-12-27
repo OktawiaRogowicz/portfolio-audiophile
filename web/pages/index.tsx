@@ -1,10 +1,10 @@
-import { Container } from "../libs/services/src/lib/Container";
-import { SectionHero } from "../libs/services/src/lib/Homepage/SectionHero";
-import { getSiteConfiguration } from "../libs/services/src/lib/getSiteConfiguration";
-import { SiteConfiguration } from "../models/site-configuration";
-import { CategoriesMini } from "../libs/services/src/lib/CategoriesMini";
-import { SectionImageAndContent } from "../libs/services/src/lib/SectionImageAndContent";
-import { SectionProductsFeatured } from "../libs/services/src/lib/Homepage/SectionProductsFeatured/SectionProductsFeatured";
+import { Container } from "../libraries/components/Container";
+import { SectionHero } from "../libraries/components/Homepage/SectionHero";
+import { getSiteConfiguration } from "../libraries/services/getSiteConfiguration";
+import { SiteConfiguration } from "../libraries/models/site-configuration";
+import { CategoriesMini } from "../libraries/components/CategoriesMini";
+import { SectionImageAndContent } from "../libraries/components/SectionImageAndContent";
+import { SectionProductsFeatured } from "../libraries/components/Homepage/SectionProductsFeatured/SectionProductsFeatured";
 
 interface Props {
   siteConfiguration: SiteConfiguration["siteConfiguration"];

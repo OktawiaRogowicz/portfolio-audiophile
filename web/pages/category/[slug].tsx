@@ -1,13 +1,12 @@
 import groq from "groq";
 import client from "../../client";
-import { styled } from "@portfolio-audiophile/styles";
-import { Container } from "../../libs/services/src/lib/Container";
-import { CategoryHeader } from "../../libs/services/src/lib/CategoryHeader";
-import { ProductPreviews } from "../../libs/services/src/lib/CategoryPage/ProductPreviews";
-import { CategoriesMini } from "../../libs/services/src/lib/CategoriesMini";
-import { SectionImageAndContent } from "../../libs/services/src/lib/SectionImageAndContent";
-import { getSiteConfiguration } from "../../libs/services/src/lib/getSiteConfiguration";
-import { SiteConfiguration } from "../../models/site-configuration";
+import { Container } from "../../libraries/components/Container";
+import { CategoryHeader } from "../../libraries/components/CategoryHeader";
+import { ProductPreviews } from "../../libraries/components/CategoryPage/ProductPreviews";
+import { CategoriesMini } from "../../libraries/components/CategoriesMini";
+import { SectionImageAndContent } from "../../libraries/components/SectionImageAndContent";
+import { getSiteConfiguration } from "../../libraries/services/getSiteConfiguration";
+import { SiteConfiguration } from "../../libraries/models/site-configuration";
 
 interface Props {
   category: {

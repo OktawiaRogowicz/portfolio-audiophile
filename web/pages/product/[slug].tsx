@@ -1,15 +1,15 @@
 import groq from "groq";
 import client from "../../client";
-import { Container } from "../../libs/services/src/lib/Container";
-import { ProductDetails } from "../../libs/services/src/lib/ProductPage/ProductDetails";
-import { FeaturesDescription } from "../../libs/services/src/lib/ProductPage/FeaturesDescription";
-import { Gallery } from "../../libs/services/src/lib/ProductPage/Gallery";
-import { Recommendations } from "../../libs/services/src/lib/ProductPage/Recommendations";
-import GoBackButton from "../../libs/services/src/lib/Buttons/GoBackButton";
-import { SectionImageAndContent } from "../../libs/services/src/lib/SectionImageAndContent";
-import { getSiteConfiguration } from "../../libs/services/src/lib/getSiteConfiguration";
-import { SiteConfiguration } from "../../models/site-configuration";
-import { CategoriesMini } from "../../libs/services/src/lib/CategoriesMini";
+import { Container } from "../../libraries/components/Container";
+import { ProductDetails } from "../../libraries/components/ProductPage/ProductDetails";
+import { FeaturesDescription } from "../../libraries/components/ProductPage/FeaturesDescription";
+import { Gallery } from "../../libraries/components/ProductPage/Gallery";
+import { Recommendations } from "../../libraries/components/ProductPage/Recommendations";
+import GoBackButton from "../../libraries/components/Buttons/GoBackButton";
+import { SectionImageAndContent } from "../../libraries/components/SectionImageAndContent";
+import { getSiteConfiguration } from "../../libraries/services/getSiteConfiguration";
+import { SiteConfiguration } from "../../libraries/models/site-configuration";
+import { CategoriesMini } from "../../libraries/components/CategoriesMini";
 
 interface Props {
   product: {
