@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="feat: added sectionHero">
-      <change afterPath="$PROJECT_DIR$/web/icons/PatternCircles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured/BigHighlight.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured/Highlight.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured/MediumHighlight.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured/SectionProductsFeatured.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured/SmallHighlight.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/models/product.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemas/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemas/siteConfiguration.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/siteConfiguration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/CategoriesMini.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/CategoriesMini.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/CategoryPage/ProductPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/CategoryPage/ProductPreview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/CategoryPage/ProductPreviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/CategoryPage/ProductPreviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionHero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/SectionImageAndContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/SectionImageAndContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/StyledClickable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/StyledClickable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/getSiteConfiguration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/services/src/lib/getSiteConfiguration.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/models/site-configuration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/models/site-configuration.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/src/lib/sizes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libs/styles/src/lib/sizes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/category/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/category/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/product/[slug].tsx" afterDir="false" />
-    </list>
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="feat: added highlights on main page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672070719680</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: added highlights on main page">
+      <created>1672157792161</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672157792161</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +215,8 @@
     <MESSAGE value="feat: stitches, header" />
     <MESSAGE value="feat: added section image and content, features description, gallery, mini categories, section wrapper, recommendations, getSiteConfiguration" />
     <MESSAGE value="feat: added sectionHero" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added sectionHero" />
+    <MESSAGE value="feat: added highlights on main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added highlights on main page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
