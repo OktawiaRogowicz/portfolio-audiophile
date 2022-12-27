@@ -1,71 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: no style flash during loading">
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: cleaning up folders structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/components/Media.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Media.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/components/StyledInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/StyledInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/components/StyledNumberInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/StyledNumberInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/icons/ArrowIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/icons/ArrowIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/icons/CartIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/icons/CartIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/icons/HamburgerIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/icons/HamburgerIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/icons/PatternCircles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/icons/PatternCircles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/jest.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/project.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Buttons/GoBackButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Buttons/GoBackButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/CategoriesMini.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoriesMini.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/CategoryHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/CategoryPage/ProductPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/CategoryPage/ProductPreviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Footer/FooterMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Footer/FooterMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionHero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured/BigHighlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/BigHighlight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured/Highlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/Highlight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured/MediumHighlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/MediumHighlight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured/SectionProductsFeatured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/SectionProductsFeatured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured/SmallHighlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/SmallHighlight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/FeaturesDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/FeaturesDescription.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/Gallery.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/ProductPage/Recommendations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/Recommendations.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/SectionImageAndContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/SectionImageAndContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/SectionWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/SectionWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/StyledClickable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/StyledClickable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/services/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/getClient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/services/getClient.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/getSanityQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/services/getSanityQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/src/lib/getSiteConfiguration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/services/getSiteConfiguration.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/tsconfig.lib.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/services/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/jest.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/project.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/src/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/src/lib/fonts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/styles/fonts.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/src/lib/globalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/styles/globalStyles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/src/lib/radius.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/styles/radius.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/src/lib/sizes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/styles/sizes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/src/lib/stitches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/styles/stitches.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/tsconfig.lib.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libs/styles/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/models/product.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/models/site-configuration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/models/site-configuration.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/category/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/category/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/product/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672160174358</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fix: cleaning up folders structure">
+      <created>1672160775587</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1672160775587</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +265,8 @@
     <MESSAGE value="fix: @sanity/block-content-to-react" />
     <MESSAGE value="fix: migration from @sanity/block-content-to-react to @portabletext/react" />
     <MESSAGE value="fix: no style flash during loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: no style flash during loading" />
+    <MESSAGE value="fix: cleaning up folders structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: cleaning up folders structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -22,15 +22,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "paths": {
-      "@portfolio-audiophile/services": [
-        "libs/styles/src/index.ts"
-      ],
-      "@portfolio-audiophile/styles": [
-        "libs/styles/src/index.ts"
-      ],
-      "header": [
-        "libs/header/src/index.ts"
-      ],
       "mylib": [
         "libs/mylib/src/index.ts"
       ]

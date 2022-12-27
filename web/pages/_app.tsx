@@ -1,7 +1,7 @@
-import { Header } from "../libs2/services/src";
-import { globalStyles } from "@portfolio-audiophile/styles";
 import { Footer } from "../libraries/components/Footer/Footer";
 import { getSiteConfiguration } from "../libraries/services/getSiteConfiguration";
+import { globalStyles } from "../libraries/styles/globalStyles";
+import { Header } from "../libraries/components/Header";
 
 export default function App({ Component, pageProps }) {
   globalStyles();
