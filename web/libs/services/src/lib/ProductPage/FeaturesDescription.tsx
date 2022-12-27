@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { styled } from "@portfolio-audiophile/styles";
-import SanityBlockContent from "@sanity/block-content-to-react";
+import { PortableText } from "@portabletext/react";
 import { SectionWrapper } from "../SectionWrapper";
 
 export type FeaturesDescriptionProps = {
@@ -65,7 +65,7 @@ export const FeaturesDescription: FC<FeaturesDescriptionProps> = ({
         <FeaturesContainer>
           <Title>Features</Title>
           <Description>
-            <SanityBlockContent blocks={product.featuresDescription} />
+            <PortableText value={product.featuresDescription} />
           </Description>
         </FeaturesContainer>
         <InTheBoxContainer>

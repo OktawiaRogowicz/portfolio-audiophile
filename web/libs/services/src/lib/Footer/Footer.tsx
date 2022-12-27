@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { styled } from "@portfolio-audiophile/styles";
-import SanityBlockContent from "@sanity/block-content-to-react";
+import { PortableText } from "@portabletext/react";
 import { Container } from "../Container";
 import Media from "../../../../../components/Media";
 import { Link } from "../Link";
@@ -90,8 +90,8 @@ export const Footer: FC<FooterProps> = ({ header, footer }) => {
       <Container backgroundColor={"black"}>
         <ContentContainer>
           <Description>
-            <SanityBlockContent blocks={footer.description} />
-            <SanityBlockContent blocks={footer.copyright} />
+            <PortableText value={footer.description} />
+            <PortableText value={footer.copyright} />
           </Description>
           <SocialMediaContainer>
             {footer.socialMedia.map((item) => {

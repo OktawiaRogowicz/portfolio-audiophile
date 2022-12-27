@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { styled } from "@portfolio-audiophile/styles";
-import SanityBlockContent from "@sanity/block-content-to-react";
+import { PortableText } from "@portabletext/react";
 import { SiteConfiguration } from "../../../../../models/site-configuration";
 import Media from "../../../../../components/Media";
 import { Link } from "../Link";
@@ -81,7 +81,7 @@ export const SectionHero: FC<SectionHeroProps> = ({ sectionHeroSettings }) => {
           <Title>{sectionHeroSettings.product.name}</Title>
           {sectionHeroSettings.description && (
             <Description>
-              <SanityBlockContent blocks={sectionHeroSettings.description} />
+              <PortableText value={sectionHeroSettings.description} />
             </Description>
           )}
           <Link

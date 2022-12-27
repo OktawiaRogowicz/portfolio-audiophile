@@ -1,6 +1,6 @@
 import { ChangeEventHandler, FC, useState } from "react";
 import { styled } from "@portfolio-audiophile/styles";
-import SanityBlockContent from "@sanity/block-content-to-react";
+import { PortableText } from "@portabletext/react";
 import Media from "../../../../../components/Media";
 import { Link } from "../Link";
 import StyledNumberInput from "../../../../../components/StyledNumberInput";
@@ -116,7 +116,7 @@ export const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
           <Title>{product.name}</Title>
         </Heading>
         <Description>
-          <SanityBlockContent blocks={product.productDescription} />
+          <PortableText value={product.productDescription} />
         </Description>
         <Price>{`$ ${product.price}`}</Price>
         <LinkContainer>

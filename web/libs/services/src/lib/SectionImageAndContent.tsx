@@ -2,7 +2,7 @@ import { FC } from "react";
 import { styled } from "@portfolio-audiophile/styles";
 import { SectionWrapper } from "./SectionWrapper";
 import Media from "../../../../components/Media";
-import SanityBlockContent from "@sanity/block-content-to-react";
+import { PortableText } from "@portabletext/react";
 import { SiteConfiguration } from "../../../../models/site-configuration";
 
 const Root = styled("div", {
@@ -69,9 +69,7 @@ export const SectionImageAndContent: FC<SectionImageAndContentProps> = ({
         <ContentContainer>
           <Title>{sectionImageAndContentSettings.title}</Title>
           <Description>
-            <SanityBlockContent
-              blocks={sectionImageAndContentSettings.description}
-            />
+            <PortableText value={sectionImageAndContentSettings.description} />
           </Description>
         </ContentContainer>
         <Image>

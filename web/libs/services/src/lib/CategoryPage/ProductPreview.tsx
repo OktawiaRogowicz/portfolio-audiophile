@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { styled } from "@portfolio-audiophile/styles";
-import SanityBlockContent from "@sanity/block-content-to-react";
+import { PortableText } from "@portabletext/react";
 import Media from "../../../../../components/Media";
 import { Link } from "../Link";
 
@@ -146,7 +146,7 @@ export const ProductPreview: FC<ProductPreviewProps> = ({
         </Heading>
         <Description>
           <div>
-            <SanityBlockContent blocks={product.productDescription} />
+            <PortableText value={product.productDescription} />
           </div>
         </Description>
         <LinkContainer>

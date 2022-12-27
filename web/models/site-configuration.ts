@@ -1,10 +1,10 @@
-import { BlockContentProps as SanityBlockContentProps } from "@sanity/block-content-to-react";
+import { PortableTextProps } from "@portabletext/react";
 import { Product } from "./product";
 
 export type SiteConfiguration = {
   header: any;
   footer: {
-    description: SanityBlockContentProps["blocks"];
+    description: PortableTextProps["blocks"];
     copyright: string;
     socialMedia: any;
   };

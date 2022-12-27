@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { styled } from "@portfolio-audiophile/styles";
 import { SiteConfiguration } from "../../../../../../models/site-configuration";
-import SanityBlockContent from "@sanity/block-content-to-react";
+import { PortableText } from "@portabletext/react";
 import { Link } from "../../Link";
 import { Highlight } from "./Highlight";
 import Media from "../../../../../../components/Media";
@@ -96,7 +96,7 @@ export const BigHighlight: FC<BigHighlightProps> = ({ productsFeatured }) => {
           )}
           {productsFeatured.description && (
             <Description>
-              <SanityBlockContent blocks={productsFeatured.description} />
+              <PortableText value={productsFeatured.description} />
             </Description>
           )}
         </TextContainer>

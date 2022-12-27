@@ -1,4 +1,4 @@
-import { BlockContentProps as SanityBlockContentProps } from "@sanity/block-content-to-react";
+import { PortableTextProps } from "@portabletext/react";
 
 export type Product = {
   isNewProduct: boolean;
@@ -15,8 +15,8 @@ export type Product = {
     mediumHighlight: any;
     smallHighlight: any;
   };
-  productDescription: SanityBlockContentProps["blocks"];
-  featuresDescription: SanityBlockContentProps["blocks"];
+  productDescription: PortableTextProps["blocks"];
+  featuresDescription: PortableTextProps["blocks"];
   inTheBox: {
     quantity: number;
     title: string;
