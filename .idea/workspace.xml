@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: cleaning up folders structure">
-      <change afterPath="$PROJECT_DIR$/web/pages/_document.tsx" afterDir="false" />
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: added ID to product, changed button labels,">
+      <change afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartPreview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartProductPreview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CartContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CheckoutContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/DetailsContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/components/Inputs/Input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/components/Modal/Content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/components/Modal/Modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/components/Modal/Overlay.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/components/ShoppingCart.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/context/shoppingCartContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/hooks/useLocalStorage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/icons/IconCash.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/icons/IconOrder.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pages/checkout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/_app.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/libraries/icons" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -60,18 +76,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/libraries/icons" />
       <recent name="$PROJECT_DIR$/web/icons" />
       <recent name="$PROJECT_DIR$/web/libs/styles/src/lib" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/web/libs/services/src/lib" />
-      <recent name="$PROJECT_DIR$/web/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/libraries/components/CheckoutPage" />
       <recent name="$PROJECT_DIR$/web/libraries/services" />
       <recent name="$PROJECT_DIR$/web/libraries/components" />
       <recent name="$PROJECT_DIR$/web/libraries" />
       <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/web/libs/services/src/lib/Homepage/SectionProductsFeatured" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -226,7 +242,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672160872933</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fix: cleaning up folders structure (added _document)">
+      <created>1672161645786</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1672161645786</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fix: added ID to product, changed button labels,">
+      <created>1672830863415</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1672830863415</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +302,9 @@
     <MESSAGE value="fix: migration from @sanity/block-content-to-react to @portabletext/react" />
     <MESSAGE value="fix: no style flash during loading" />
     <MESSAGE value="fix: cleaning up folders structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: cleaning up folders structure" />
+    <MESSAGE value="fix: cleaning up folders structure (added _document)" />
+    <MESSAGE value="fix: added ID to product, changed button labels," />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: added ID to product, changed button labels," />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
