@@ -4,6 +4,7 @@ import React, { FC } from "react";
 const Root = styled("div", {
   zIndex: 0,
   width: "100vw",
+  height: "100%",
   variants: {
     backgroundColor: {
       black: {
@@ -12,6 +13,14 @@ const Root = styled("div", {
       },
       white: {
         backgroundColor: "$white",
+        color: "$black",
+      },
+      gray: {
+        backgroundColor: "$gray",
+        color: "$black",
+      },
+      transparent: {
+        backgroundColor: "transparent",
         color: "$black",
       },
     },
@@ -32,7 +41,7 @@ const ContainerWithMargins = styled("div", {
 });
 
 export type ContainerProps = {
-  backgroundColor?: "black" | "white" | "transparent";
+  backgroundColor?: "black" | "white" | "gray" | "transparent";
   children: React.ReactNode;
 };
 

@@ -45,7 +45,7 @@ export const MediumHighlight: FC<MediumHighlightProps> = ({
           appearance={"secondary"}
           href={productsFeatured.mediumHighlight.slug.current}
         >
-          {productsFeatured.mediumHighlight.slug.current}
+          See product
         </Link>
       </Container>
       <Media

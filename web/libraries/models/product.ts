@@ -1,6 +1,7 @@
 import { PortableTextProps } from "@portabletext/react";
 
 export type Product = {
+  id: number;
   isNewProduct: boolean;
   name: string;
   slug: {

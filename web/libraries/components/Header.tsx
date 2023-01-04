@@ -57,7 +57,7 @@ const MenuContainerDesktop = styled("div", {
 
 const MenuItem = styled("div", {});
 
-const CartContainer = styled("div", {
+const CartContainer = styled(Link, {
   alignItems: "end",
   justifyContent: "end",
   textAlign: "end",
@@ -101,7 +101,7 @@ export const Header: FC<HeaderProps> = ({ header }) => {
             })}
           </MenuContainerDesktop>
         )}
-        <CartContainer>
+        <CartContainer appearance={"plain"} href={"/checkout"}>
           <CartIcon />
         </CartContainer>
       </Root>

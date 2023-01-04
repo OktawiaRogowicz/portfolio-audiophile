@@ -39,6 +39,7 @@ const Product = ({ product, siteConfiguration }: Props) => {
 };
 
 const query = groq`*[_type == "product" && slug.current == $slug][0]{
+    id,
     isNewProduct,
     name, 
     slug,

@@ -48,6 +48,7 @@ export const getSiteConfiguration = async (): Promise<SiteConfiguration> => {
           ...,
           description,
           "product": *[_type == "product" && _id == ^.product._ref][0] {
+            id,
             isNewProduct,
             name,
             "href": slug.current,

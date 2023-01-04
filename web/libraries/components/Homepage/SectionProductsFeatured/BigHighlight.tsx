@@ -101,7 +101,7 @@ export const BigHighlight: FC<BigHighlightProps> = ({ productsFeatured }) => {
           )}
         </TextContainer>
         <Link
-          appearance={"secondary"}
+          appearance={"tertiary"}
           href={`/product/${productsFeatured.bigHighlight.slug.current}`}
         >
           See product

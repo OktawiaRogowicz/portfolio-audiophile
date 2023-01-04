@@ -17,6 +17,7 @@ export const {
       orange: "#D87D4A",
       lightOrange: "#fbaf85",
       gray: "#F1F1F1",
+      darkGray: "#CFCFCF",
       lightGray: "#FAFAFA",
       white: "#FFFFFF",
       white02: "rgba(255, 255, 255, 0.2)",

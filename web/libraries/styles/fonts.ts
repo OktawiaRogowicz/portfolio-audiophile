@@ -73,6 +73,16 @@ export const fonts = {
     lineHeight: "25px",
     ...MANROPE_MEDIUM,
   },
+  body02: {
+    fontSize: 14,
+    lineHeight: "24px",
+    ...MANROPE_BOLD,
+  },
+  body03: {
+    fontSize: 12,
+    lineHeight: "16px",
+    ...MANROPE_BOLD,
+  },
   button: {
     fontSize: 13,
     letterSpacing: "1px",

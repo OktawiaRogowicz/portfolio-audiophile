@@ -56,7 +56,7 @@ export const SmallHighlight: FC<SmallHighlightProps> = ({
           appearance={"secondary"}
           href={productsFeatured.smallHighlight.slug.current}
         >
-          {productsFeatured.smallHighlight.slug.current}
+          See product
         </Link>
       </Container>
     </Root>

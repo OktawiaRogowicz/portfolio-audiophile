@@ -45,6 +45,7 @@ const query = groq`*[_type == "category" && slug.current == $slug][0]{
     slug,
     _id,
     "products": *[_type == 'product' && references(^._id)] {
+        id,
         isNewProduct,
         name,
         slug,

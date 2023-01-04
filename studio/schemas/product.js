@@ -6,6 +6,11 @@ export default {
   type: "document",
   fields: [
     {
+      name: "id",
+      title: "ID",
+      type: "number",
+    },
+    {
       name: "isNewProduct",
       title: "Is new product?",
       type: "boolean",
