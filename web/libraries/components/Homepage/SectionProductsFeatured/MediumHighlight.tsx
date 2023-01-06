@@ -6,9 +6,12 @@ import Media from "../../Media";
 import { Link } from "../../Link";
 
 const Root = styled("div", {
+  minHeight: "320px",
   position: "relative",
   borderRadius: "10px",
   overflow: "hidden",
+  display: "grid",
+  alignItems: "center",
   img: {
     zIndex: -1,
     position: "absolute",

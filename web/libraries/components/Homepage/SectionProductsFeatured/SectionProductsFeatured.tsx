@@ -8,8 +8,15 @@ import { SmallHighlight } from "./SmallHighlight";
 
 const Root = styled("div", {
   display: "grid",
-  gridTemplateRows: "560px 320px 320px",
   gap: "$48",
+  gridAutoRows: "auto",
+  // gridTemplateRows: "600px 320px px",
+  // "@md": {
+  //   gridTemplateRows: "720px 320px 320px",
+  // },
+  // "@lg": {
+  //   gridTemplateRows: "560px 320px 320px",
+  // },
 });
 
 export type SectionProductsFeaturedProps = {

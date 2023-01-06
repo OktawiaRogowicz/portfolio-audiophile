@@ -7,26 +7,50 @@ import Media from "../../Media";
 
 const Root = styled("div", {
   display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gap: "$32",
+  gridTemplateRows: "1fr 1fr",
+  gap: "$24",
+  "@md": {
+    gridTemplateRows: "none",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "$12",
+  },
+  "@lg": {
+    gap: "$32",
+  },
 });
 
 const ImageContainer = styled("div", {
+  height: "200px",
   borderRadius: "10px",
   overflow: "hidden",
+  display: "grid",
+  alignItems: "center",
   img: {
     height: "100%",
     width: "100%",
     objectFit: "cover",
   },
+  "@md": {
+    height: "320px",
+  },
 });
 
 const Container = styled(Highlight, {
+  height: "200px",
   borderRadius: "10px",
   overflow: "hidden",
   backgroundColor: "$gray",
-  display: "grid",
   gap: "$32",
+  display: "grid",
+  alignItems: "center",
+  "@md": {
+    height: "320px",
+  },
+});
+
+const TextContainer = styled("div", {
+  gap: "$32",
+  display: "grid",
 });
 
 const Title = styled("h4", {
@@ -51,13 +75,15 @@ export const SmallHighlight: FC<SmallHighlightProps> = ({
         />
       </ImageContainer>
       <Container>
-        <Title>{productsFeatured.smallHighlight.name}</Title>
-        <Link
-          appearance={"secondary"}
-          href={productsFeatured.smallHighlight.slug.current}
-        >
-          See product
-        </Link>
+        <TextContainer>
+          <Title>{productsFeatured.smallHighlight.name}</Title>
+          <Link
+            appearance={"secondary"}
+            href={productsFeatured.smallHighlight.slug.current}
+          >
+            See product
+          </Link>
+        </TextContainer>
       </Container>
     </Root>
   );

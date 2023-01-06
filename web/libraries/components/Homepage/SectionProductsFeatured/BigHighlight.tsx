@@ -8,38 +8,69 @@ import Media from "../../Media";
 import { PatternCircles } from "../../../icons/PatternCircles";
 
 const Root = styled(Highlight, {
-  paddingTop: "$120",
+  minHeight: "600px",
   display: "grid",
-  gap: "$120",
-  gridTemplateColumns: "1fr 1fr",
   backgroundColor: "$orange",
   borderRadius: "10px",
   position: "relative",
   overflow: "hidden",
+  gridTemplateRows: "1fr 1fr",
+  justifyContent: "center",
+  alignItems: "center",
+  "@md": {
+    minHeight: "720px",
+  },
+  "@lg": {
+    minHeight: "560px",
+    gap: "$120",
+    paddingTop: "$120",
+    gridTemplateRows: "none",
+    gridTemplateColumns: "1fr 1fr",
+  },
 });
 
-const ImagesContainer = styled("div", {});
+const ImagesContainer = styled("div", {
+  height: "100%",
+});
 
 const ImageContainer = styled("div", {
+  position: "relative",
+  height: "100%",
+  width: "100%",
   img: {
     zIndex: "2",
     position: "absolute",
-    bottom: "-5%",
-    maxHeight: "420px",
     height: "100%",
     width: "100%",
     objectFit: "contain",
-    right: "20%",
+    top: "5%",
+    maxHeight: "240px",
+    right: "0%",
+    "@lg": {
+      top: "auto",
+      bottom: "-$120",
+      maxHeight: "560px",
+    },
   },
 });
 
 const Circles = styled("div", {
+  height: "100%",
+  width: "100%",
+  position: "absolute",
+  display: "grid",
+  alignItems: "center",
+  justifyContent: "center",
   svg: {
-    transform: "scale(1.2)",
+    transform: "scale(0.5) translateY(-65%)",
     zIndex: "1",
-    position: "absolute",
-    bottom: "-75%",
-    right: "27.5%",
+    top: "200%",
+    bottom: "auto",
+    "@lg": {
+      right: "auto",
+      transform: "scale(1.2)",
+      top: "auto",
+    },
   },
 });
 
@@ -50,6 +81,16 @@ const ContentContainer = styled("div", {
   height: "fit-content",
   gap: "$40",
   maxWidth: "$maxWidthXXS",
+  textAlign: "center",
+  a: {
+    placeSelf: "center",
+  },
+  "@lg": {
+    textAlign: "left",
+    a: {
+      placeSelf: "left",
+    },
+  },
 });
 
 const TextContainer = styled("div", {

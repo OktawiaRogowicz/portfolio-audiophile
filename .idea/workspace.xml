@@ -1,37 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: centered text, fixed orange line transform">
-      <change afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CheckoutModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libraries/components/Price/PriceDetail.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libraries/components/ShoppingCart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libraries/context/shoppingCartContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libraries/hooks/useLocalStorage.tsx" afterDir="false" />
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="feat: added checkout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Buttons/GoBackButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Buttons/GoBackButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoriesMini.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoriesMini.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartPreview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartProductPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartProductPreview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CartContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CartContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CheckoutContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CheckoutContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/DetailsContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/DetailsContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionHero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Inputs/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Inputs/Input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/FeaturesDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/FeaturesDescription.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/Recommendations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/Recommendations.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/SectionImageAndContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/SectionImageAndContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/StyledNumberInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/StyledNumberInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/styles/fonts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/styles/fonts.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/styles/globalStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/styles/globalStyles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/styles/stitches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/styles/stitches.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/checkout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/BigHighlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/BigHighlight.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/Highlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/Highlight.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/MediumHighlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/MediumHighlight.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/SectionProductsFeatured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/SectionProductsFeatured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/SmallHighlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/SmallHighlight.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672997182535</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="feat: added checkout">
+      <created>1673037580074</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1673037580074</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +315,8 @@
     <MESSAGE value="fix: added ID to product, changed button labels," />
     <MESSAGE value="feat: added checkout [WIP]" />
     <MESSAGE value="fix: centered text, fixed orange line transform" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: centered text, fixed orange line transform" />
+    <MESSAGE value="feat: added checkout" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added checkout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
