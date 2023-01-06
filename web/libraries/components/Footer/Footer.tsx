@@ -30,7 +30,7 @@ const OrangeLine = styled("div", {
   backgroundColor: "$orange",
   top: "0",
   left: "50%",
-  transform: "translate(-50%, -50%)",
+  transform: "translate(-50%, 0)",
   "@md": {
     left: "$containerMarginTablet",
     transform: "none",
@@ -85,7 +85,7 @@ export type FooterProps = {
 export const Footer: FC<FooterProps> = ({ header, footer }) => {
   return (
     <Root>
-      {/*<OrangeLine />*/}
+      <OrangeLine />
       <FooterMenu header={header} />
       <Container backgroundColor={"black"}>
         <ContentContainer>
@@ -94,9 +94,9 @@ export const Footer: FC<FooterProps> = ({ header, footer }) => {
             <PortableText value={footer.copyright} />
           </Description>
           <SocialMediaContainer>
-            {footer.socialMedia.map((item) => {
+            {footer.socialMedia.map((item, index) => {
               return (
-                <Link href={"/test"}>
+                <Link key={`socialMedia-${index}`} href={"/test"}>
                   <Media image={item.logo.image} />
                 </Link>
               );

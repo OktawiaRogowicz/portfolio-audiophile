@@ -33,7 +33,6 @@ const MenuContainer = styled("div", {
   gap: "$16",
   gridAutoFlow: "row",
   gridTemplate: "1fr",
-  textAlign: "center",
   alignItems: "center",
   justifyContent: "center",
   "@md": {
@@ -43,7 +42,10 @@ const MenuContainer = styled("div", {
   },
 });
 
-const MenuItem = styled("div", {});
+const MenuItem = styled("div", {
+  justifyContent: "center",
+  display: "grid",
+});
 
 export type FooterMenuProps = {
   header: {
@@ -66,9 +68,9 @@ export const FooterMenu: FC<FooterMenuProps> = ({ header }) => {
                 {"Home"}
               </Link>
             </MenuItem>
-            {header.menu.map((menuItem) => {
+            {header.menu.map((menuItem, index) => {
               return (
-                <MenuItem>
+                <MenuItem key={`menuItem-${index}`}>
                   <Link
                     appearance={"plain"}
                     href={`/category/${menuItem.link.href}`}
