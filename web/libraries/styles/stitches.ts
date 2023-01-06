@@ -21,6 +21,7 @@ export const {
       lightGray: "#FAFAFA",
       white: "#FFFFFF",
       white02: "rgba(255, 255, 255, 0.2)",
+      white05: "rgba(255, 255, 255, 0.5)",
       lightBlack: "#101010",
       black: "#000000",
       black05: "rgba(0, 0, 0, 0.5)",

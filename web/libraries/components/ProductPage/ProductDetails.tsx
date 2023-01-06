@@ -1,9 +1,10 @@
-import { ChangeEventHandler, FC, useState } from "react";
+import { FC, useState } from "react";
 import { styled } from "../../styles/stitches";
 import { PortableText } from "@portabletext/react";
 import Media from "../Media";
-import { Link } from "../Link";
 import StyledNumberInput from "../StyledNumberInput";
+import { StyledClickable } from "../StyledClickable";
+import { useShoppingCartContext } from "../../context/shoppingCartContext";
 
 const Root = styled("div", {
   display: "grid",
@@ -103,6 +104,19 @@ export type ProductDetailsProps = {
 };
 
 export const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
+  const { increaseCartQuantity } = useShoppingCartContext();
+  const [quantity, setQuantity] = useState<number>(1);
+
+  const handleChange = (e: any) => {
+    setQuantity(parseInt(e.target.value));
+  };
+  const handleAdd = () => {
+    setQuantity((prev) => prev + 1);
+  };
+  const handleSubtract = () => {
+    setQuantity((prev) => prev - 1);
+  };
+
   return (
     <Root>
       <MediaContainer>
@@ -113,21 +127,28 @@ export const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
       <Details>
         <Heading>
           {product.isNewProduct && <Subtitle>New Product</Subtitle>}
-          <Title>{product.name}</Title>
+          {product.name && <Title>{product.name}</Title>}
         </Heading>
-        <Description>
-          <PortableText value={product.productDescription} />
-        </Description>
+        {product.productDescription && (
+          <Description>
+            <PortableText value={product.productDescription} />
+          </Description>
+        )}
         <Price>{`$ ${product.price}`}</Price>
         <LinkContainer>
           <AddToCartContainer>
-            <StyledNumberInput />
-            <Link
+            <StyledNumberInput
+              value={quantity}
+              handleChange={handleChange}
+              handleAdd={handleAdd}
+              handleSubtract={handleSubtract}
+            />
+            <StyledClickable
+              onClick={() => increaseCartQuantity(product, quantity)}
               appearance={"primary"}
-              href={`/product/${product.slug.current}`}
             >
               Add to cart
-            </Link>
+            </StyledClickable>
           </AddToCartContainer>
         </LinkContainer>
       </Details>

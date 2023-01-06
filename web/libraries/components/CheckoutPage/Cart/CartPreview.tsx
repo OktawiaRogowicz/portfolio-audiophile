@@ -1,6 +1,6 @@
 import { styled } from "../../../styles/stitches";
-import React, { FC } from "react";
-import { Product } from "../../../models/product";
+import React, { FC, useEffect, useState } from "react";
+import { useShoppingCartContext } from "../../../context/shoppingCartContext";
 import { CartProductPreview } from "./CartProductPreview";
 
 const Root = styled("div", {
@@ -12,21 +12,31 @@ const CartProductsPreview = styled("div", {
   gap: "$24",
 });
 
-export type CartPreviewProps = {
-  products: Product[];
-};
+export type CartPreviewProps = {};
 
-export const CartPreview: FC<CartPreviewProps> = ({ products = [] }) => {
+export const CartPreview: FC<CartPreviewProps> = ({}) => {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const { cartItems } = useShoppingCartContext();
+  console.log("itemQuantity: ", cartItems);
+
+  if (!mounted) return null;
   return (
     <Root>
       <CartProductsPreview>
-        {products.length > 0 ? (
-          products.map((product) => {
-            return <CartProductPreview variant={"big"} product={product} />;
-          })
-        ) : (
-          <div>Your cart is empty</div>
-        )}
+        {cartItems.length > 0 &&
+          cartItems.map((cartItem, index) => {
+            return (
+              <CartProductPreview
+                key={`cartItem-${index}`}
+                variant={"small"}
+                cartItem={cartItem}
+              />
+            );
+          })}
       </CartProductsPreview>
     </Root>
   );

@@ -54,6 +54,18 @@ export const fonts = {
     textTransform: "uppercase",
     ...MANROPE_BOLD,
   },
+  heading07: {
+    fontSize: 15,
+    lineHeight: "25px",
+    textTransform: "uppercase",
+    ...MANROPE_BOLD,
+  },
+  heading08: {
+    fontSize: 15,
+    lineHeight: "25px",
+    textTransform: "uppercase",
+    ...MANROPE_REGULAR,
+  },
   overline: {
     fontSize: 14,
     lineHeight: "19px",

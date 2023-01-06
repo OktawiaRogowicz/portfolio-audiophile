@@ -90,8 +90,8 @@ export const Footer: FC<FooterProps> = ({ header, footer }) => {
       <Container backgroundColor={"black"}>
         <ContentContainer>
           <Description>
-            <PortableText value={footer.description} />
-            <PortableText value={footer.copyright} />
+            {footer.description && <PortableText value={footer.description} />}
+            {footer.copyright && <PortableText value={footer.copyright} />}
           </Description>
           <SocialMediaContainer>
             {footer.socialMedia.map((item, index) => {

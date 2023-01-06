@@ -87,9 +87,9 @@ export const Header: FC<HeaderProps> = ({ header }) => {
                 {"Home"}
               </Link>
             </MenuItem>
-            {header.menu.map((menuItem) => {
+            {header.menu.map((menuItem, index) => {
               return (
-                <MenuItem>
+                <MenuItem key={`menuItem-${index}`}>
                   <Link
                     appearance={"plain"}
                     href={`/category/${menuItem.link.href}`}

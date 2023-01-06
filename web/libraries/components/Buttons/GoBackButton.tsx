@@ -2,12 +2,12 @@ import { Link } from "../Link";
 import { styled } from "../../styles/stitches";
 
 const Root = styled("div", {
-  margin: "$16 0 $24 0",
+  padding: "$16 0 $24 0",
   "@md": {
-    margin: "$32 0 $24 0",
+    padding: "$32 0 $24 0",
   },
   "@lg": {
-    margin: "$80 0 $56 0",
+    padding: "$80 0 $56 0",
   },
 });
 

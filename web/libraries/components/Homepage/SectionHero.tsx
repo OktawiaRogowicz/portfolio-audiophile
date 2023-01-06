@@ -78,7 +78,9 @@ export const SectionHero: FC<SectionHeroProps> = ({ sectionHeroSettings }) => {
           {sectionHeroSettings.product.isNewProduct && (
             <Subtitle>New Product</Subtitle>
           )}
-          <Title>{sectionHeroSettings.product.name}</Title>
+          {sectionHeroSettings.product.name && (
+            <Title>{sectionHeroSettings.product.name}</Title>
+          )}
           {sectionHeroSettings.description && (
             <Description>
               <PortableText value={sectionHeroSettings.description} />

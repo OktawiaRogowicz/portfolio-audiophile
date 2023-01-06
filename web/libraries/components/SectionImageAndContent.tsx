@@ -67,10 +67,16 @@ export const SectionImageAndContent: FC<SectionImageAndContentProps> = ({
     <SectionWrapper margin={"M"}>
       <Root>
         <ContentContainer>
-          <Title>{sectionImageAndContentSettings.title}</Title>
-          <Description>
-            <PortableText value={sectionImageAndContentSettings.description} />
-          </Description>
+          {sectionImageAndContentSettings.title && (
+            <Title>{sectionImageAndContentSettings.title}</Title>
+          )}
+          {sectionImageAndContentSettings.description && (
+            <Description>
+              <PortableText
+                value={sectionImageAndContentSettings.description}
+              />
+            </Description>
+          )}
         </ContentContainer>
         <Image>
           <Media image={sectionImageAndContentSettings.image.image} />

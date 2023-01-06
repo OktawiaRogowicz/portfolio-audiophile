@@ -70,9 +70,9 @@ export const CategoriesMini: FC<CategoriesMiniProps> = ({ miniCategories }) => {
     <SectionWrapper>
       <Root>
         {miniCategories?.length > 0 &&
-          miniCategories.map((item) => {
+          miniCategories.map((item, index) => {
             return (
-              <MiniCategoryContainer>
+              <MiniCategoryContainer key={`miniCategoryContainer-${index}`}>
                 <MiniCategoryImage>
                   <Media image={item.link.image.image} />
                 </MiniCategoryImage>

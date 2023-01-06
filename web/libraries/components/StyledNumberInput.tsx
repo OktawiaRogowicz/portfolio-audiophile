@@ -14,23 +14,23 @@ const Button = styled("button", {
   color: "$black05",
 });
 
-const StyledNumberInput = ({ image }) => {
-  const [quantity, setQuantity] = useState(1);
+type StyledNumberInputProps = {
+  value: number;
+  handleChange: (e: any) => void;
+  handleAdd: () => void;
+  handleSubtract: () => void;
+};
 
-  const handleChange = (e: any) => {
-    setQuantity(parseInt(e.target.value));
-  };
-  const handleAdd = () => {
-    setQuantity((prev) => prev + 1);
-  };
-  const handleSubtract = () => {
-    setQuantity((prev) => prev - 1);
-  };
-
+const StyledNumberInput = ({
+  value,
+  handleChange,
+  handleAdd,
+  handleSubtract,
+}: StyledNumberInputProps) => {
   return (
     <Root>
       <Button onClick={handleAdd}>+</Button>
-      <StyledInput type={"number"} value={quantity} onChange={handleChange} />
+      <StyledInput type={"number"} value={value} onChange={handleChange} />
       <Button onClick={handleSubtract}>-</Button>
     </Root>
   );

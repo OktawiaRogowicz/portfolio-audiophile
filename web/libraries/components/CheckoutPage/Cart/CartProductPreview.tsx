@@ -2,6 +2,7 @@ import { styled } from "../../../styles/stitches";
 import { FC } from "react";
 import { Product } from "../../../models/product";
 import Media from "../../Media";
+import { CartItemType } from "../../../context/shoppingCartContext";
 
 const Root = styled("div", {
   display: "grid",
@@ -10,8 +11,9 @@ const Root = styled("div", {
 });
 
 const CartProductImage = styled("div", {
+  overflow: "hidden",
+  borderRadius: "5px",
   backgroundColor: "$gray",
-  borderRadius: "10px",
   variants: {
     variant: {
       big: {
@@ -33,39 +35,44 @@ const CartProductDetails = styled("div", {
 
 const CartProductHeading = styled("div", {
   display: "grid",
+  gap: "$16",
   gridTemplateColumns: "1fr auto",
 });
 
-const CartProductTitle = styled("div", {});
+const CartProductTitle = styled("div", {
+  projectFont: "heading07",
+});
 
 const CartProductQuantity = styled("div", {
+  projectFont: "body02",
   color: "$black05",
 });
 
 const CartProductPrice = styled("div", {
   color: "$black05",
+  projectFont: "body02",
 });
 
 export type CartProductPreviewProps = {
   variant: "big" | "small";
-  product: Product;
+  cartItem: CartItemType;
 };
 
 export const CartProductPreview: FC<CartProductPreviewProps> = ({
   variant,
-  product,
+  cartItem,
 }) => {
   return (
     <Root>
       <CartProductImage variant={variant}>
-        <Media image={product.image.image} />
+        <Media image={cartItem.product.image.image} />
       </CartProductImage>
       <CartProductDetails>
         <CartProductHeading>
-          <CartProductTitle>{product.name}</CartProductTitle>
-          <CartProductQuantity>{}</CartProductQuantity>
+          <CartProductTitle>{cartItem.product.name}</CartProductTitle>
+          <CartProductQuantity>x{cartItem.quantity}</CartProductQuantity>
         </CartProductHeading>
-        <CartProductPrice>{product.price}</CartProductPrice>
+        <CartProductPrice>{cartItem.product.price}</CartProductPrice>
       </CartProductDetails>
     </Root>
   );

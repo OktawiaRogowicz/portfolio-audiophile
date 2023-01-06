@@ -21,7 +21,13 @@ export const ProductPreviews: FC<ProductPreviewsProps> = ({ products }) => {
         {products &&
           products.length > 0 &&
           products.map((product, index) => {
-            return <ProductPreview product={product} position={index % 2} />;
+            return (
+              <ProductPreview
+                key={`productPreview-${index}`}
+                product={product}
+                position={index % 2}
+              />
+            );
           })}
       </Root>
     </SectionWrapper>

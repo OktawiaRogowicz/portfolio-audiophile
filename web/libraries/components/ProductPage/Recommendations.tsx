@@ -64,9 +64,11 @@ export const Recommendations: FC<RecommendationsProps> = ({ product }) => {
       <Root>
         <Title>You may also like</Title>
         <Products>
-          {product.recommendations.map((item) => {
+          {product.recommendations.map((item, index: number) => {
             return (
-              <Product>
+              <Product
+                key={`recommendationProduct-${product.slug.current}-${index}`}
+              >
                 <ProductImage>
                   <Media image={item.recommendation.image.image} />
                 </ProductImage>

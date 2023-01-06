@@ -64,17 +64,19 @@ export const FeaturesDescription: FC<FeaturesDescriptionProps> = ({
       <Root>
         <FeaturesContainer>
           <Title>Features</Title>
-          <Description>
-            <PortableText value={product.featuresDescription} />
-          </Description>
+          {product.featuresDescription && (
+            <Description>
+              <PortableText value={product.featuresDescription} />
+            </Description>
+          )}
         </FeaturesContainer>
         <InTheBoxContainer>
           <Title>In the box</Title>
           <Description>
             {product.inTheBox &&
-              product.inTheBox.map((item) => {
+              product.inTheBox.map((item, index: number) => {
                 return (
-                  <BoxItem>
+                  <BoxItem key={`boxItem-${product.slug.current}-${index}`}>
                     <span>{item.quantity}x</span>
                     <p>{item.title}</p>
                   </BoxItem>

@@ -22,7 +22,7 @@ const Subtitle = styled("div", {
 
 const DetailsContentWrap = styled("div", {
   display: "grid",
-  gap: "$16",
+  gap: "$24",
 });
 
 const DetailsContent = styled("div", {
@@ -32,8 +32,12 @@ const DetailsContent = styled("div", {
 
 const TwoColumnsContainer = styled("div", {
   display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gap: "$24 $16",
+  gridAutoRows: "1fr",
+  gap: "$24 $24",
+  "@md": {
+    gridTemplateColumns: "1fr 1fr",
+    gap: "$24 $16",
+  },
 });
 
 const Label = styled("div", {

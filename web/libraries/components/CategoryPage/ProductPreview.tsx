@@ -142,13 +142,15 @@ export const ProductPreview: FC<ProductPreviewProps> = ({
       <Details appearance={variant}>
         <Heading>
           {product.isNewProduct && <Subtitle>New Product</Subtitle>}
-          <Title>{product.name}</Title>
+          {product.name && <Title>{product.name}</Title>}
         </Heading>
-        <Description>
-          <div>
-            <PortableText value={product.productDescription} />
-          </div>
-        </Description>
+        {product.productDescription && (
+          <Description>
+            <div>
+              <PortableText value={product.productDescription} />
+            </div>
+          </Description>
+        )}
         <LinkContainer>
           <Link
             appearance={"primary"}

@@ -2,23 +2,29 @@ import { styled } from "../../styles/stitches";
 import React, { FC } from "react";
 import { DetailsContainer } from "./DetailsContainer";
 import { CartContainer } from "./CartContainer";
-import { Product } from "../../models/product";
 
 const Root = styled("div", {
   display: "grid",
-  gridTemplateColumns: "1fr 350px",
+  gridTemplateRows: "auto auto",
   gap: "$32",
+  paddingBottom: "$96",
+  "@md": {
+    paddingBottom: "$108",
+  },
+  "@lg": {
+    gridTemplateRows: "none",
+    gridTemplateColumns: "1fr 350px",
+    paddingBottom: "$144",
+  },
 });
 
-export type CheckoutProps = {
-  products: Product[];
-};
+export type CheckoutProps = {};
 
-export const CheckoutContainer: FC<CheckoutProps> = ({ products }) => {
+export const CheckoutContainer: FC<CheckoutProps> = ({}) => {
   return (
     <Root>
       <DetailsContainer />
-      <CartContainer products={products} />
+      <CartContainer />
     </Root>
   );
 };
