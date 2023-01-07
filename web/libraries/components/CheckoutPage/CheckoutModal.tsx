@@ -36,13 +36,31 @@ const ModalProductsPreviewContainer = styled("div", {
 });
 
 const ModalProductsPreview = styled("div", {
+  display: "grid",
+  gap: "$16",
   backgroundColor: "$gray",
   padding: "$24",
+  overflowY: "scroll",
+  maxHeight: "$240",
+  "-ms-overflow-style": "none",
+  scrollbarWidth: "none",
+  "&::-webkit-scrollbar": {
+    display: "none",
+  },
+});
+
+const SingleProductPreview = styled("div", {
+  "&:not(&:first-of-type)": {
+    borderTop: "1px solid $darkGray",
+    paddingTop: "$16",
+  },
 });
 
 const ModalProductsGrandTotalPrice = styled("div", {
   display: "grid",
   gap: "$8",
+  gridTemplateRows: "1fr auto",
+  alignItems: "end",
   backgroundColor: "$black",
   padding: "$32",
   color: "$white",
@@ -60,7 +78,6 @@ const TotalPricePrice = styled("div", {
 
 const StyledLink = styled("div", {
   display: "grid",
-  backgroundColor: "pink",
   a: {
     maxWidth: "100%",
     width: "100%",
@@ -94,13 +111,15 @@ export const CheckoutModal: FC<CheckoutModalProps> = ({
               cartItems.length > 0 &&
               cartItems.map((cartItem) => {
                 return (
-                  <CartProductPreview variant={"small"} cartItem={cartItem} />
+                  <SingleProductPreview>
+                    <CartProductPreview variant={"small"} cartItem={cartItem} />
+                  </SingleProductPreview>
                 );
               })}
           </ModalProductsPreview>
           <ModalProductsGrandTotalPrice>
             <TotalPriceTitle>GRAND TOTAL</TotalPriceTitle>
-            <TotalPricePrice>{cartTotalPrice}</TotalPricePrice>
+            <TotalPricePrice>{`$ ${cartTotalPrice}`}</TotalPricePrice>
           </ModalProductsGrandTotalPrice>
         </ModalProductsPreviewContainer>
         <StyledLink>

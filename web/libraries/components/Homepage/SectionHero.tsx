@@ -12,12 +12,27 @@ const Root = styled("div", {
   display: "grid",
   gridAutoFlow: "rows",
   alignItems: "center",
+  justifyContent: "center",
+  textAlign: "center",
+  "@lg": {
+    justifyContent: "left",
+    textAlign: "left",
+  },
 });
 
 const ContentContainer = styled("div", {
   display: "grid",
   gap: "$24",
   maxWidth: "$maxWidthS",
+  justifyContent: "center",
+  a: {
+    placeSelf: "center",
+  },
+  "@lg": {
+    a: {
+      placeSelf: "auto",
+    },
+  },
 });
 
 const Heading = styled("div", {
@@ -36,12 +51,15 @@ const Title = styled("div", {
 });
 
 const Description = styled("div", {
+  marginRight: "auto",
+  marginLeft: "auto",
   display: "grid",
   justifyContent: "center",
   projectFont: "body01",
   color: "$white",
   maxWidth: "$maxWidthXXS",
   "@lg": {
+    marginLeft: "0",
     justifyContent: "left",
   },
 });
@@ -88,7 +106,7 @@ export const SectionHero: FC<SectionHeroProps> = ({ sectionHeroSettings }) => {
           )}
           <Link
             appearance={"primary"}
-            href={`/${sectionHeroSettings.product.href}`}
+            href={`/product/${sectionHeroSettings.product.href}`}
           >
             See product
           </Link>

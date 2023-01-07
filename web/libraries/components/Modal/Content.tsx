@@ -22,19 +22,33 @@ const ContentStyled = styled("div", {
 });
 
 type ContentProps = ComponentPropsWithRef<"div"> & {
+  margin: string;
   onRequestClose?: (event: React.MouseEvent | React.KeyboardEvent) => void;
   openTime: number;
   closeTime: number;
 };
 
 export const Content = React.forwardRef<HTMLDivElement, ContentProps>(
-  ({ children, openTime, closeTime, onRequestClose, ...restProps }, ref) => {
+  (
+    {
+      children,
+      openTime,
+      closeTime,
+      margin = "auto",
+      onRequestClose,
+      ...restProps
+    },
+    ref
+  ) => {
     return (
       <ContentStyled
         {...restProps}
         ref={ref}
         style={{}}
         css={{
+          "@lg": {
+            margin: `${margin}`,
+          },
           "&.base": {
             transition: `all ${openTime}ms cubic-bezier(.2,.4,.2,1)`,
           },

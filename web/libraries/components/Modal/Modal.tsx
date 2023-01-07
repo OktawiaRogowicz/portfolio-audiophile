@@ -4,6 +4,7 @@ import { Content } from "./Content";
 import { Overlay } from "./Overlay";
 
 export type ModalProps = ReactModal.Props & {
+  margin?: string;
   children: React.ReactNode;
 };
 
@@ -16,6 +17,7 @@ export const MODAL_CLASSES = {
 export const Modal: FC<ModalProps> = ({
   isOpen,
   onRequestClose,
+  margin,
   children,
   ...reactModalProps
 }) => {
@@ -43,7 +45,7 @@ export const Modal: FC<ModalProps> = ({
         </Overlay>
       )}
       contentElement={(props, children) => (
-        <Content {...props} {...contentProps}>
+        <Content margin={margin} {...props} {...contentProps}>
           {children}
         </Content>
       )}

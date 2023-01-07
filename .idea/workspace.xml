@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="feat: added checkout">
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: highlights on mobile">
+      <change afterPath="$PROJECT_DIR$/web/libraries/components/CartModal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartPreview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartProductPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartProductPreview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CartContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CartContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CheckoutContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CheckoutContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CheckoutModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CheckoutModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionHero.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/BigHighlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/BigHighlight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/Highlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/Highlight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/MediumHighlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/MediumHighlight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/SectionProductsFeatured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/SectionProductsFeatured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/SmallHighlight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionProductsFeatured/SmallHighlight.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Modal/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Modal/Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Modal/Modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Price/PriceDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Price/PriceDetail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/ShoppingCart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ShoppingCart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/context/shoppingCartContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/context/shoppingCartContext.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +29,8 @@
       <list>
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -265,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673037580074</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix: highlights on mobile">
+      <created>1673041309617</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1673041309617</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +333,8 @@
     <MESSAGE value="feat: added checkout [WIP]" />
     <MESSAGE value="fix: centered text, fixed orange line transform" />
     <MESSAGE value="feat: added checkout" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added checkout" />
+    <MESSAGE value="fix: highlights on mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: highlights on mobile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

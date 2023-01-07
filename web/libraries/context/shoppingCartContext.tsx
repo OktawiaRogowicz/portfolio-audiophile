@@ -20,6 +20,7 @@ export type ShoppingCartContextType = {
   increaseCartQuantity: (product: Product, quantity: number) => void;
   decreaseCartQuantity: (id: number) => void;
   removeFromCart: (id: number) => void;
+  removeAllFromCart: () => void;
   cartItems: CartItemType[];
   cartTotalPrice: number;
 };
@@ -31,6 +32,7 @@ export const ShoppingCartContext = createContext<ShoppingCartContextType>({
   increaseCartQuantity: () => null,
   decreaseCartQuantity: () => null,
   removeFromCart: () => null,
+  removeAllFromCart: () => null,
   cartItems: [],
   cartTotalPrice: 0,
 });
@@ -87,6 +89,9 @@ export const ShoppingCartProvider: FC<PropsWithChildren> = ({ children }) => {
       return currItems.filter((item) => item.product.id !== id);
     });
   }
+  function removeAllFromCart() {
+    setCartItems([]);
+  }
 
   return (
     <ShoppingCartContext.Provider
@@ -95,6 +100,7 @@ export const ShoppingCartProvider: FC<PropsWithChildren> = ({ children }) => {
         increaseCartQuantity,
         decreaseCartQuantity,
         removeFromCart,
+        removeAllFromCart,
         openCart,
         closeCart,
         cartItems,

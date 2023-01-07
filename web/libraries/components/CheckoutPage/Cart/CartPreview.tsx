@@ -32,7 +32,7 @@ export const CartPreview: FC<CartPreviewProps> = ({}) => {
             return (
               <CartProductPreview
                 key={`cartItem-${index}`}
-                variant={"small"}
+                variant={"big"}
                 cartItem={cartItem}
               />
             );
