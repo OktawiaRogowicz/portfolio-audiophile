@@ -39,7 +39,7 @@ export const PriceDetail: FC<PriceDetailProps> = ({
   return (
     <Root>
       <Text>{label}</Text>
-      <Price variant={variant}>{price}</Price>
+      <Price variant={variant}>{`$ ${price}`}</Price>
     </Root>
   );
 };

@@ -11,7 +11,7 @@ const Root = styled("div", {
   "@md": {
     paddingBottom: "$108",
   },
-  "@lg": {
+  "@xl": {
     gridTemplateRows: "none",
     gridTemplateColumns: "1fr 350px",
     paddingBottom: "$144",

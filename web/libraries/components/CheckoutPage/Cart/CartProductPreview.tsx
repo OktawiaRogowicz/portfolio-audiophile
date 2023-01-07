@@ -1,6 +1,5 @@
 import { styled } from "../../../styles/stitches";
 import { FC } from "react";
-import { Product } from "../../../models/product";
 import Media from "../../Media";
 import { CartItemType } from "../../../context/shoppingCartContext";
 
@@ -72,7 +71,7 @@ export const CartProductPreview: FC<CartProductPreviewProps> = ({
           <CartProductTitle>{cartItem.product.name}</CartProductTitle>
           <CartProductQuantity>x{cartItem.quantity}</CartProductQuantity>
         </CartProductHeading>
-        <CartProductPrice>{cartItem.product.price}</CartProductPrice>
+        <CartProductPrice>{`$ ${cartItem.product.price}`}</CartProductPrice>
       </CartProductDetails>
     </Root>
   );

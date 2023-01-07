@@ -44,6 +44,7 @@ const ContentContainer = styled("div", {
   position: "relative",
   display: "grid",
   alignItems: "center",
+  justifyContent: "center",
   gap: "$48",
 });
 
@@ -94,9 +95,13 @@ export const Footer: FC<FooterProps> = ({ header, footer }) => {
             {footer.copyright && <PortableText value={footer.copyright} />}
           </Description>
           <SocialMediaContainer>
-            {footer.socialMedia.map((item, index) => {
+            {footer.socialMedia.map((item, index: number) => {
               return (
-                <Link key={`socialMedia-${index}`} href={"/test"}>
+                <Link
+                  key={`socialMedia-${index}`}
+                  href={"/test"}
+                  appearance={"plain"}
+                >
                   <Media image={item.logo.image} />
                 </Link>
               );

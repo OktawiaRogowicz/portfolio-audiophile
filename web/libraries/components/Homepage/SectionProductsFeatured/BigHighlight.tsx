@@ -112,7 +112,6 @@ export type BigHighlightProps = {
 };
 
 export const BigHighlight: FC<BigHighlightProps> = ({ productsFeatured }) => {
-  console.log("productsFeatured: ", productsFeatured);
   if (!productsFeatured.bigHighlight) return null;
   return (
     <Root>
