@@ -12,8 +12,12 @@ const Root = styled("div", {
   gap: "0 $16",
   variants: {
     variant: {
-      default: { gridTemplateColumns: "auto 1fr" },
-      withQuantityInput: { gridTemplateColumns: "auto auto 1fr" },
+      default: {
+        gridTemplateColumns: "auto 1fr",
+      },
+      withQuantityInput: {
+        gridTemplateColumns: "auto 1fr auto",
+      },
     },
   },
 });

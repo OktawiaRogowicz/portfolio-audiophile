@@ -6,14 +6,25 @@ import { StyledClickable } from "./StyledClickable";
 export const Root = styled("div", {});
 
 export type ProjectLinkProps = {
-  appearance: "primary" | "secondary" | "tertiary" | "plain";
+  appearance?: "primary" | "secondary" | "tertiary" | "plain";
   href: LinkProps["href"];
   children: React.ReactNode;
+  onClick?: (event: React.MouseEvent | React.KeyboardEvent) => void;
 };
 
-export const Link: FC<ProjectLinkProps> = ({ appearance, href, children }) => {
+export const Link: FC<ProjectLinkProps> = ({
+  appearance,
+  href,
+  children,
+  onClick,
+}) => {
   return (
-    <StyledClickable as={"a"} href={href} appearance={appearance}>
+    <StyledClickable
+      onClick={onClick}
+      as={"a"}
+      href={href}
+      appearance={appearance}
+    >
       {children}
     </StyledClickable>
   );

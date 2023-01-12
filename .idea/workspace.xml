@@ -2,31 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="feat: finished up cart">
-      <change afterPath="$PROJECT_DIR$/web/libraries/components/Inputs/FormStyledInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libraries/helpers/validateRequired.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CartModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CartModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartPreview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartProductPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/Cart/CartProductPreview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CartContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CartContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CheckoutContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CheckoutContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CheckoutModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/CheckoutModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/DetailsContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CheckoutPage/DetailsContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libraries/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Homepage/SectionHero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Inputs/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Inputs/Input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/SectionImageAndContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/SectionImageAndContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/StyledClickable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/StyledClickable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/StyledInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Inputs/StyledInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/StyledNumberInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/StyledNumberInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/context/shoppingCartContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/context/shoppingCartContext.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/icons/ArrowIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/icons/ArrowIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/styles/stitches.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/styles/stitches.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Link.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673132445653</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="feat: finished up cart">
+      <created>1673537339500</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1673537339500</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

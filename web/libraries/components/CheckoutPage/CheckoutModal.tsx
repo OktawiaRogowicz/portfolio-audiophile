@@ -100,7 +100,7 @@ export const CheckoutModal: FC<CheckoutModalProps> = ({
   closeModal,
   cartItems,
 }) => {
-  const { cartTotalPrice } = useShoppingCartContext();
+  const { cartTotalPrice, removeAllFromCart } = useShoppingCartContext();
 
   return (
     <Modal isOpen={isModalOpen}>
@@ -131,7 +131,7 @@ export const CheckoutModal: FC<CheckoutModalProps> = ({
           </ModalProductsGrandTotalPrice>
         </ModalProductsPreviewContainer>
         <StyledLink>
-          <Link appearance={"primary"} href={"/"}>
+          <Link appearance={"primary"} href={"/"} onClick={removeAllFromCart}>
             Back to home
           </Link>
         </StyledLink>

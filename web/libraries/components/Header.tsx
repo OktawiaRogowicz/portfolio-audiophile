@@ -29,7 +29,7 @@ const Root = styled("div", {
   },
 });
 
-const LogoContainer = styled("div", {
+const LogoContainer = styled(Link, {
   display: "grid",
   justifyContent: "center",
   "@md": {
@@ -110,7 +110,7 @@ export const Header: FC<HeaderProps> = ({ header }) => {
         <MenuHamburger>
           <HamburgerIcon />
         </MenuHamburger>
-        <LogoContainer>
+        <LogoContainer href={"/"}>
           {header?.logo && <Media image={header.logo.image} />}
         </LogoContainer>
         {header?.menu?.length > 0 && (
