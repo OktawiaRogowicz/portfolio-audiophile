@@ -23,6 +23,11 @@ const Heading = styled("div", {
   gridTemplateColumns: "1fr auto",
 });
 
+const EmptyCartText = styled("div", {
+  projectFont: "body01",
+  color: "$black05",
+});
+
 const Title = styled("div", {
   projectFont: "heading06",
 });
@@ -73,15 +78,18 @@ export const CartModal: FC<CartModalProps> = ({
   return (
     <Modal
       isOpen={isModalOpen}
+      onRequestClose={closeModal}
       shouldFocusAfterRender={true}
       margin={"calc($headerHeight + $24) $containerMarginDesktop 0 auto"}
     >
       <Root>
         <Heading>
           <Title>Cart ({cartItems.length})</Title>
-          <RemoveAllButton
-            onClick={() => removeAllFromCart()}
-          >{`Remove all`}</RemoveAllButton>
+          {cartItems && cartItems.length !== 0 && (
+            <RemoveAllButton
+              onClick={() => removeAllFromCart()}
+            >{`Remove all`}</RemoveAllButton>
+          )}
         </Heading>
         {cartItems.length > 0 && (
           <CartProductsPreview>
@@ -89,25 +97,33 @@ export const CartModal: FC<CartModalProps> = ({
               return (
                 <CartProductPreview
                   key={`cartItem-${index}`}
-                  variant={"big"}
+                  size={"big"}
+                  variant={"withQuantityInput"}
                   cartItem={cartItem}
                 />
               );
             })}
           </CartProductsPreview>
         )}
-        <PriceDetails>
-          <PriceDetail
-            label={"Total"}
-            price={cartTotalPrice}
-            variant={"black"}
-          />
-        </PriceDetails>
-        <ButtonContainer>
-          <Link appearance={"primary"} href={"/checkout"}>
-            Continue
-          </Link>
-        </ButtonContainer>
+        {cartItems && cartItems.length === 0 ? (
+          <EmptyCartText>Your cart is empty.</EmptyCartText>
+        ) : (
+          <>
+            <PriceDetails>
+              <PriceDetail
+                label={"Total"}
+                price={cartTotalPrice}
+                variant={"black"}
+              />
+            </PriceDetails>
+
+            <ButtonContainer>
+              <Link appearance={"primary"} href={"/checkout"}>
+                Continue
+              </Link>
+            </ButtonContainer>
+          </>
+        )}
       </Root>
     </Modal>
   );

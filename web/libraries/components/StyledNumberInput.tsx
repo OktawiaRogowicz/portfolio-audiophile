@@ -1,37 +1,56 @@
 import { styled } from "../styles/stitches";
-import { StyledInput } from "./StyledInput";
-import { useState } from "react";
+import { StyledInput } from "./Inputs/StyledInput";
 
 const Root = styled("div", {
   display: "grid",
-  gridTemplateColumns: "1fr 1fr 1fr",
+  gridTemplateColumns: "auto auto auto",
 });
 
 const Button = styled("button", {
-  height: "$48",
-  width: "$40",
   border: "none",
   color: "$black05",
+  variants: {
+    size: {
+      big: {
+        height: "$48",
+        width: "$40",
+      },
+      small: {
+        height: "$32",
+        width: "$24",
+      },
+    },
+  },
 });
 
 type StyledNumberInputProps = {
+  size?: "big" | "small";
   value: number;
-  handleChange: (e: any) => void;
   handleAdd: () => void;
   handleSubtract: () => void;
 };
 
 const StyledNumberInput = ({
+  size = "big",
   value,
-  handleChange,
   handleAdd,
   handleSubtract,
 }: StyledNumberInputProps) => {
   return (
     <Root>
-      <Button onClick={handleAdd}>+</Button>
-      <StyledInput type={"number"} value={value} onChange={handleChange} />
-      <Button onClick={handleSubtract}>-</Button>
+      <Button size={size} onClick={handleAdd}>
+        +
+      </Button>
+      <StyledInput
+        type={"number"}
+        onKeyPress={(e) => !/[0-9]/.test(e.key) && e.preventDefault()}
+        min="1"
+        value={value}
+        size={size}
+      />
+      <Button size={size} onClick={handleSubtract}>
+        -
+      </Button>
     </Root>
   );
 };

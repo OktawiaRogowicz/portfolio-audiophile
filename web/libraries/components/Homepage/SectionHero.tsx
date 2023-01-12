@@ -83,7 +83,6 @@ export type SectionHeroProps = {
 };
 
 export const SectionHero: FC<SectionHeroProps> = ({ sectionHeroSettings }) => {
-  console.log("sectionHeroSettings: ", sectionHeroSettings);
   return (
     <>
       <BackgroundImage>

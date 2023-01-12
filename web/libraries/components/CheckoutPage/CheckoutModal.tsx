@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC } from "react";
 import { styled } from "../../styles/stitches";
 import { Modal } from "../Modal/Modal";
 import { IconOrder } from "../../icons/IconOrder";
@@ -47,6 +47,11 @@ const ModalProductsPreview = styled("div", {
   "&::-webkit-scrollbar": {
     display: "none",
   },
+});
+
+const EmptyCartText = styled("div", {
+  projectFont: "body01",
+  color: "$black05",
 });
 
 const SingleProductPreview = styled("div", {
@@ -98,7 +103,7 @@ export const CheckoutModal: FC<CheckoutModalProps> = ({
   const { cartTotalPrice } = useShoppingCartContext();
 
   return (
-    <Modal isOpen={isModalOpen} shouldFocusAfterRender={false}>
+    <Modal isOpen={isModalOpen}>
       <ModalContainer>
         <IconOrder />
         <ModalTitle>{"THANK YOU\nFOR YOUR ORDER"}</ModalTitle>
@@ -107,12 +112,15 @@ export const CheckoutModal: FC<CheckoutModalProps> = ({
         </ModalDescription>
         <ModalProductsPreviewContainer>
           <ModalProductsPreview>
+            {cartItems && cartItems.length === 0 && (
+              <EmptyCartText>Your cart is empty.</EmptyCartText>
+            )}
             {cartItems &&
               cartItems.length > 0 &&
               cartItems.map((cartItem) => {
                 return (
                   <SingleProductPreview>
-                    <CartProductPreview variant={"small"} cartItem={cartItem} />
+                    <CartProductPreview size={"small"} cartItem={cartItem} />
                   </SingleProductPreview>
                 );
               })}

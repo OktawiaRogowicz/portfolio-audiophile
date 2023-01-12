@@ -5,6 +5,7 @@ import { CartPreview } from "./Cart/CartPreview";
 import { useShoppingCartContext } from "../../context/shoppingCartContext";
 import { PriceDetail } from "../Price/PriceDetail";
 import { CheckoutModal } from "./CheckoutModal";
+import { FieldErrors, FieldValues } from "react-hook-form";
 
 const Root = styled("div", {
   height: "fit-content",
@@ -30,6 +31,11 @@ const GrandTotal = styled("div", {
   projectFont: "body01",
 });
 
+const EmptyCartMessage = styled("div", {
+  projectFont: "body01",
+  color: "$red",
+});
+
 const ButtonContainer = styled("div", {
   display: "grid",
   button: {
@@ -39,14 +45,9 @@ const ButtonContainer = styled("div", {
 
 export type CartContainerProps = {};
 
-export const CartContainer: FC<CartContainerProps> = () => {
+export const CartContainer: FC<CartContainerProps> = ({}) => {
   const [mounted, setMounted] = useState(false);
   const { cartItems, cartTotalPrice } = useShoppingCartContext();
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  function closeModal() {
-    setIsModalOpen(false);
-  }
 
   useEffect(() => {
     setMounted(true);
@@ -58,35 +59,35 @@ export const CartContainer: FC<CartContainerProps> = () => {
     <Root>
       <Title>Summary</Title>
       <CartPreview />
-      <PriceDetails>
-        <PriceDetail label={"Total"} price={cartTotalPrice} variant={"black"} />
-        <PriceDetail label={"Shipping"} price={50} variant={"black"} />
-        <PriceDetail
-          label={"VAT (INCLUDED)"}
-          price={Number(Math.round(cartTotalPrice * 0.2).toFixed(2))}
-          variant={"black"}
-        />
-      </PriceDetails>
-      <GrandTotal>
-        <PriceDetail
-          label={"GRAND TOTAL"}
-          price={cartTotalPrice + 50}
-          variant={"orange"}
-        />
-      </GrandTotal>
-      <ButtonContainer>
-        <StyledClickable
-          appearance={"primary"}
-          onClick={() => setIsModalOpen(true)}
-        >
-          Continue
-        </StyledClickable>
-      </ButtonContainer>
-      <CheckoutModal
-        isModalOpen={isModalOpen}
-        closeModal={closeModal}
-        cartItems={cartItems}
-      />
+      {cartItems.length > 0 && (
+        <>
+          <PriceDetails>
+            <PriceDetail
+              label={"Total"}
+              price={cartTotalPrice}
+              variant={"black"}
+            />
+            <PriceDetail label={"Shipping"} price={50} variant={"black"} />
+            <PriceDetail
+              label={"VAT (INCLUDED)"}
+              price={Number(Math.round(cartTotalPrice * 0.2).toFixed(2))}
+              variant={"black"}
+            />
+          </PriceDetails>
+          <GrandTotal>
+            <PriceDetail
+              label={"GRAND TOTAL"}
+              price={cartTotalPrice + 50}
+              variant={"orange"}
+            />
+          </GrandTotal>
+          <ButtonContainer>
+            <StyledClickable type={"submit"} appearance={"primary"}>
+              Continue
+            </StyledClickable>
+          </ButtonContainer>
+        </>
+      )}
     </Root>
   );
 };

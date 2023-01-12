@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import { Container } from "./Container";
 import Media from "./Media";
 import { Link } from "./Link";
@@ -60,9 +60,26 @@ const MenuContainerDesktop = styled("div", {
 const MenuItem = styled("div", {});
 
 const CartContainer = styled(StyledClickable, {
+  position: "relative",
   alignItems: "end",
   justifyContent: "end",
   textAlign: "end",
+  "&:hover": {
+    color: "$white !important",
+  },
+});
+
+const CartQuantity = styled("div", {
+  position: "absolute",
+  content: "",
+  width: "$16",
+  height: "$16",
+  borderRadius: "100%",
+  bottom: "-$8",
+  right: "-$8",
+  backgroundColor: "$orange",
+  projectFont: "body03",
+  textAlign: "center",
 });
 
 export type HeaderProps = {
@@ -73,12 +90,20 @@ export type HeaderProps = {
 };
 
 export const Header: FC<HeaderProps> = ({ header }) => {
+  const [mounted, setMounted] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const { cartItems, cartTotalPrice } = useShoppingCartContext();
+  const { cartItems, getQuantity } = useShoppingCartContext();
+  const cartQuantity = getQuantity();
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   function closeModal() {
     setIsModalOpen(false);
   }
+
   return (
     <Container backgroundColor={"black"}>
       <Root>
@@ -109,11 +134,9 @@ export const Header: FC<HeaderProps> = ({ header }) => {
             })}
           </MenuContainerDesktop>
         )}
-        <CartContainer
-          appearance={"plain"}
-          onClick={() => setIsModalOpen(true)}
-        >
+        <CartContainer onClick={() => setIsModalOpen(true)}>
           <CartIcon />
+          <CartQuantity>{cartQuantity}</CartQuantity>
         </CartContainer>
       </Root>
       <CartModal

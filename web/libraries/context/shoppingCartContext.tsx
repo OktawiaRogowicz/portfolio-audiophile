@@ -21,6 +21,7 @@ export type ShoppingCartContextType = {
   decreaseCartQuantity: (id: number) => void;
   removeFromCart: (id: number) => void;
   removeAllFromCart: () => void;
+  getQuantity: () => number;
   cartItems: CartItemType[];
   cartTotalPrice: number;
 };
@@ -33,6 +34,7 @@ export const ShoppingCartContext = createContext<ShoppingCartContextType>({
   decreaseCartQuantity: () => null,
   removeFromCart: () => null,
   removeAllFromCart: () => null,
+  getQuantity: () => 0,
   cartItems: [],
   cartTotalPrice: 0,
 });
@@ -50,10 +52,13 @@ export const ShoppingCartProvider: FC<PropsWithChildren> = ({ children }) => {
   );
 
   const openCart = () => setIsOpen(true);
+
   const closeCart = () => setIsOpen(false);
+
   function getItemQuantity(id: number) {
     return cartItems.find((item) => item.product.id === id)?.quantity || 0;
   }
+
   function increaseCartQuantity(product: Product, quantity: number) {
     setCartItems((currItems) => {
       if (currItems.find((item) => item.product.id === product.id) == null) {
@@ -69,6 +74,7 @@ export const ShoppingCartProvider: FC<PropsWithChildren> = ({ children }) => {
       }
     });
   }
+
   function decreaseCartQuantity(id: number) {
     setCartItems((currItems) => {
       if (currItems.find((item) => item.product.id === id)?.quantity === 1) {
@@ -84,13 +90,21 @@ export const ShoppingCartProvider: FC<PropsWithChildren> = ({ children }) => {
       }
     });
   }
+
   function removeFromCart(id: number) {
     setCartItems((currItems) => {
       return currItems.filter((item) => item.product.id !== id);
     });
   }
+
   function removeAllFromCart() {
     setCartItems([]);
+  }
+
+  function getQuantity() {
+    if (cartItems)
+      return cartItems.reduce((counter, { quantity }) => counter + quantity, 0);
+    else return 0;
   }
 
   return (
@@ -103,6 +117,7 @@ export const ShoppingCartProvider: FC<PropsWithChildren> = ({ children }) => {
         removeAllFromCart,
         openCart,
         closeCart,
+        getQuantity,
         cartItems,
         cartTotalPrice,
       }}

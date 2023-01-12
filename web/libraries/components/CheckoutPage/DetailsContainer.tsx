@@ -2,6 +2,14 @@ import { styled } from "../../styles/stitches";
 import React, { FC, useState } from "react";
 import { StyledInput } from "../Inputs/Input";
 import { IconCash } from "../../icons/IconCash";
+import {
+  Control,
+  FieldValues,
+  useController,
+  UseFormRegister,
+} from "react-hook-form";
+import { FormStyledInput } from "../Inputs/FormStyledInput";
+import { validateRequired } from "../../helpers/validateRequired";
 
 const Root = styled("div", {
   backgroundColor: "$white",
@@ -32,7 +40,7 @@ const DetailsContent = styled("div", {
 
 const TwoColumnsContainer = styled("div", {
   display: "grid",
-  gridAutoRows: "1fr",
+  gridAutoRows: "auto",
   gap: "$24 $24",
   "@md": {
     gridTemplateColumns: "1fr 1fr",
@@ -62,9 +70,19 @@ const TipDescription = styled("div", {
   color: "$black05",
 });
 
-export type DetailsContainerProps = {};
+export type DetailsContainerProps = {
+  control: Control<FieldValues, any>;
+};
 
-export const DetailsContainer: FC<DetailsContainerProps> = ({}) => {
+export const DetailsContainer: FC<DetailsContainerProps> = ({ control }) => {
+  const [selectedPayment, setSelectedPayment] = useState<string>("cash");
+
+  const radioHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedPayment(event.target.value);
+  };
+
+  console.log("selectedPayment", selectedPayment);
+
   return (
     <Root>
       <Title>Checkout</Title>
@@ -72,20 +90,63 @@ export const DetailsContainer: FC<DetailsContainerProps> = ({}) => {
         <Subtitle>Billing details</Subtitle>
         <DetailsContent>
           <TwoColumnsContainer>
-            <StyledInput label={"Name"} />
-            <StyledInput type={"email"} label={"E-mail address"} />
-            <StyledInput type={"number"} label={"Phone Number"} />
+            <FormStyledInput
+              control={control}
+              rules={validateRequired()}
+              name={"name"}
+              label={"Name"}
+              placeholder="Name"
+            />
+            <FormStyledInput
+              control={control}
+              rules={validateRequired()}
+              name={"email"}
+              type={"email"}
+              label={"E-mail address"}
+              placeholder="E-mail address"
+            />
+            <FormStyledInput
+              control={control}
+              rules={validateRequired()}
+              name={"phoneNumber"}
+              label={"Phone Number"}
+              placeholder="Phone number"
+            />
           </TwoColumnsContainer>
         </DetailsContent>
       </DetailsContentWrap>
       <DetailsContentWrap>
         <Subtitle>Shipping info</Subtitle>
-        <StyledInput label={"Address"} />
+        <FormStyledInput
+          control={control}
+          rules={validateRequired()}
+          name={"address"}
+          label={"Address"}
+          placeholder={"Address"}
+        />
         <DetailsContent>
           <TwoColumnsContainer>
-            <StyledInput label={"ZIP code"} />
-            <StyledInput label={"City"} />
-            <StyledInput label={"Country"} />
+            <FormStyledInput
+              control={control}
+              rules={validateRequired()}
+              name={"zipCode"}
+              label={"ZIP code"}
+              placeholder={"ZIP code"}
+            />
+            <FormStyledInput
+              control={control}
+              rules={validateRequired()}
+              name={"city"}
+              label={"City"}
+              placeholder={"City"}
+            />
+            <FormStyledInput
+              control={control}
+              rules={validateRequired()}
+              name={"country"}
+              label={"Country"}
+              placeholder={"Country"}
+            />
           </TwoColumnsContainer>
         </DetailsContent>
       </DetailsContentWrap>
@@ -94,9 +155,40 @@ export const DetailsContainer: FC<DetailsContainerProps> = ({}) => {
         <TwoColumnsContainer>
           <Label>Payment Method</Label>
           <PaymentDetailsContent>
-            <StyledInput type={"radio"} label={"e-Money"} />
-            <StyledInput type={"radio"} label={"Cash on Delivery"} />
+            <StyledInput
+              id="e-money"
+              type={"radio"}
+              label={"e-Money"}
+              value={"e-Money"}
+              onChange={radioHandler}
+            />
+            <StyledInput
+              defaultChecked
+              id="cash-on-delivery"
+              type={"radio"}
+              label={"Cash on Delivery"}
+              value={"cash"}
+              onChange={radioHandler}
+            />
           </PaymentDetailsContent>
+          {selectedPayment === "e-Money" && (
+            <>
+              <FormStyledInput
+                control={control}
+                rules={validateRequired()}
+                name={"eMoneyNumber"}
+                label={"e-Money Number"}
+                placeholder={"e-Money Number"}
+              />
+              <FormStyledInput
+                control={control}
+                rules={validateRequired()}
+                name={"eMoneyPIN"}
+                label={"e-Money PIN"}
+                placeholder={"e-Money PIN"}
+              />
+            </>
+          )}
         </TwoColumnsContainer>
       </DetailsContentWrap>
       <TipContainer>

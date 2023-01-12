@@ -6,11 +6,11 @@ import { styled } from "../../styles/stitches";
 
 const Root = styled("div", {
   display: "grid",
-  gap: "0 $32",
+  gap: "$32 0",
   justifyContent: "center",
   gridTemplateRows: "auto 1fr",
   "@md": {
-    gap: "0 $56",
+    gap: "$56 0",
   },
   "@lg": {
     gridTemplateColumns: "1fr 1fr",

@@ -81,7 +81,7 @@ const Description = styled("div", {
   placeSelf: "center",
   "@md": {
     maxWidth: "$maxWidthXS",
-    placeSelf: "left",
+    placeSelf: "auto",
   },
 });
 
@@ -107,14 +107,11 @@ export const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
   const { increaseCartQuantity } = useShoppingCartContext();
   const [quantity, setQuantity] = useState<number>(1);
 
-  const handleChange = (e: any) => {
-    setQuantity(parseInt(e.target.value));
-  };
   const handleAdd = () => {
     setQuantity((prev) => prev + 1);
   };
   const handleSubtract = () => {
-    setQuantity((prev) => prev - 1);
+    if (quantity > 1) setQuantity((prev) => prev - 1);
   };
 
   return (
@@ -139,7 +136,6 @@ export const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
           <AddToCartContainer>
             <StyledNumberInput
               value={quantity}
-              handleChange={handleChange}
               handleAdd={handleAdd}
               handleSubtract={handleSubtract}
             />

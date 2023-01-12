@@ -12,6 +12,11 @@ const CartProductsPreview = styled("div", {
   gap: "$24",
 });
 
+const EmptyCartText = styled("div", {
+  projectFont: "body01",
+  color: "$black05",
+});
+
 export type CartPreviewProps = {};
 
 export const CartPreview: FC<CartPreviewProps> = ({}) => {
@@ -21,18 +26,21 @@ export const CartPreview: FC<CartPreviewProps> = ({}) => {
   }, []);
 
   const { cartItems } = useShoppingCartContext();
-  console.log("itemQuantity: ", cartItems);
 
   if (!mounted) return null;
   return (
     <Root>
       <CartProductsPreview>
-        {cartItems.length > 0 &&
+        {cartItems && cartItems.length === 0 && (
+          <EmptyCartText>Your cart is empty.</EmptyCartText>
+        )}
+        {cartItems &&
+          cartItems.length > 0 &&
           cartItems.map((cartItem, index) => {
             return (
               <CartProductPreview
                 key={`cartItem-${index}`}
-                variant={"big"}
+                size={"big"}
                 cartItem={cartItem}
               />
             );

@@ -53,6 +53,9 @@ export const StyledClickable = styled("button", {
       plain: {
         projectFont: "subtitle",
         textDecoration: "none",
+        "&:hover, &:active, &:focus-within": {
+          color: "$orange",
+        },
       },
     },
   },

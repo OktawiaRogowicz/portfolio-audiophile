@@ -43,7 +43,9 @@ const Description = styled("div", {
   color: "$black05",
 });
 
-const Image = styled("div", {
+const MediaContainer = styled("div", {
+  display: "grid",
+  justifyContent: "center",
   order: 1,
   img: {
     borderRadius: "10px",
@@ -78,9 +80,9 @@ export const SectionImageAndContent: FC<SectionImageAndContentProps> = ({
             </Description>
           )}
         </ContentContainer>
-        <Image>
+        <MediaContainer>
           <Media image={sectionImageAndContentSettings.image.image} />
-        </Image>
+        </MediaContainer>
       </Root>
     </SectionWrapper>
   );
