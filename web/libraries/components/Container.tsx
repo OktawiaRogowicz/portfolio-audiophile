@@ -4,7 +4,6 @@ import React, { FC } from "react";
 const Root = styled("div", {
   zIndex: 0,
   width: "100vw",
-  height: "100%",
   variants: {
     backgroundColor: {
       black: {

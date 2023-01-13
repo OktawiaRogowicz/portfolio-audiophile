@@ -16,13 +16,19 @@ const Root = styled("div", {
           marginBottom: "$160",
         },
       },
+      S: {
+        marginTop: "$64",
+        marginBottom: "$64",
+      },
       none: {},
     },
   },
 });
 
+export type SectionWrapperMarginType = "M" | "S" | "none";
+
 export type SectionWrapperProps = {
-  margin?: "M" | "none";
+  margin?: SectionWrapperMarginType;
   children: React.ReactNode;
 };
 

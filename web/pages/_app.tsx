@@ -3,14 +3,15 @@ import { getSiteConfiguration } from "../libraries/services/getSiteConfiguration
 import { globalStyles } from "../libraries/styles/globalStyles";
 import { Header } from "../libraries/components/Header";
 import { ShoppingCartProvider } from "../libraries/context/shoppingCartContext";
-import { useEffect } from "react";
-import { setAppElement } from "react-modal";
 
 export default function App({ Component, pageProps }) {
   globalStyles();
   return (
     <ShoppingCartProvider>
-      <Header header={pageProps.header} />
+      <Header
+        header={pageProps.header}
+        siteConfiguration={pageProps.siteConfiguration}
+      />
       <Component {...pageProps} />
       <Footer footer={pageProps.footer} header={pageProps.header} />
     </ShoppingCartProvider>

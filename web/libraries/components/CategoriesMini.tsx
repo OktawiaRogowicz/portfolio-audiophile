@@ -2,7 +2,7 @@ import { FC } from "react";
 import Media from "./Media";
 import { ArrowIcon } from "../icons/ArrowIcon";
 import { Link } from "./Link";
-import { SectionWrapper } from "./SectionWrapper";
+import { SectionWrapper, SectionWrapperMarginType } from "./SectionWrapper";
 import { styled } from "../styles/stitches";
 
 const Root = styled("div", {
@@ -28,7 +28,7 @@ const MiniCategoryContainer = styled("div", {
   display: "grid",
   gridAutoFlow: "rows",
   textAlign: "center",
-  padding: "0 $24 $24 $24",
+  padding: "0 $16 $16 $16",
   a: {
     placeSelf: "center",
     color: "$black05",
@@ -43,7 +43,6 @@ const MiniCategoryContainer = styled("div", {
     backgroundColor: "$gray",
     borderRadius: "10px",
   },
-  "@md": {},
   "@lg": {
     padding: "0 $32 $32 $32",
   },
@@ -51,23 +50,30 @@ const MiniCategoryContainer = styled("div", {
 
 const ContentContainer = styled("div", {
   display: "grid",
-  gap: "$16",
+  gap: "$4",
 });
 
 const MiniCategoryImage = styled("div", {
   img: {
-    maxHeight: "$160",
+    maxHeight: "$96",
     objectFit: "contain",
+    "@md": {
+      maxHeight: "$160",
+    },
   },
 });
 
 export type CategoriesMiniProps = {
+  margin?: SectionWrapperMarginType;
   miniCategories: any;
 };
 
-export const CategoriesMini: FC<CategoriesMiniProps> = ({ miniCategories }) => {
+export const CategoriesMini: FC<CategoriesMiniProps> = ({
+  margin,
+  miniCategories,
+}) => {
   return (
-    <SectionWrapper>
+    <SectionWrapper margin={margin}>
       <Root>
         {miniCategories?.length > 0 &&
           miniCategories.map((item, index) => {

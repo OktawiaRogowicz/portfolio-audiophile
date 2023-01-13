@@ -28,7 +28,7 @@ export const sizes = {
   288: "288px",
   378: "378px",
   416: "416px",
-  headerHeight: "96px",
+  headerHeight: "89px",
   containerMarginMobile: "24px",
   containerMarginTablet: "40px",
   containerMarginDesktop: "165px",
