@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: added close cart button">
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: added fade to modal/content">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Modal/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Modal/Content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Modal/Overlay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Modal/Overlay.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673638181388</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="fix: added fade to modal/content">
+      <created>1673638386576</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1673638386576</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +369,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fallback" />
     <MESSAGE value="[slug] fix" />
     <MESSAGE value="feat: stitches, header" />
     <MESSAGE value="feat: added section image and content, features description, gallery, mini categories, section wrapper, recommendations, getSiteConfiguration" />
@@ -388,7 +393,8 @@
     <MESSAGE value="feat: scrolling now impossible when mobile menu is open" />
     <MESSAGE value="fix: updated cart quantity font color" />
     <MESSAGE value="fix: added close cart button" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: added close cart button" />
+    <MESSAGE value="fix: added fade to modal/content" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: added fade to modal/content" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

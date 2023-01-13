@@ -18,27 +18,26 @@ const StickyHeaderContainer = styled("div", {
 });
 
 const StyledContainer = styled("div", {
-  zIndex: 1,
+  zIndex: -1,
   position: "absolute",
   top: "$headerHeight",
-  // display: "grid",
   overflow: "hidden",
-  transform: "200ms",
+  transition: "all 200ms",
   background: "rgba(0, 0, 0, 0.5)",
   height: "calc(100vh)",
   variants: {
     isOpen: {
       true: {
-        // display: "grid",
-        // gridTemplateColumns: "1fr",
-        // margin: "auto",
-        // justifyContent: "center",
+        transitionDelay: "0ms",
+        opacity: 1,
         "@lg": {
-          display: "none",
+          visibility: "none",
         },
       },
       false: {
-        display: "none",
+        opacity: 0,
+        visibility: "none",
+        transitionDelay: "400ms",
       },
     },
   },
@@ -52,6 +51,18 @@ const MobileMenuBackground = styled("div", {
   "@md": {
     padding: "$64 0",
   },
+  transition: "all 200ms",
+  variants: {
+    isOpen: {
+      true: {
+        transform: "none",
+      },
+      false: {
+        transition: "all 400ms",
+        transform: "translateY(-100%)",
+      },
+    },
+  },
 });
 
 const MobileMenu = styled(Container, {
@@ -59,7 +70,7 @@ const MobileMenu = styled(Container, {
 });
 
 const Root = styled("div", {
-  zIndex: "1",
+  zIndex: 100,
   position: "relative",
   display: "grid",
   gap: "$40",
@@ -210,7 +221,7 @@ export const Header: FC<HeaderProps> = ({ header, siteConfiguration }) => {
         />
       </Container>
       <StyledContainer isOpen={isMobileMenuOpen}>
-        <MobileMenuBackground>
+        <MobileMenuBackground isOpen={isMobileMenuOpen}>
           <MobileMenu backgroundColor={"white"}>
             <CategoriesMini
               margin={"none"}
