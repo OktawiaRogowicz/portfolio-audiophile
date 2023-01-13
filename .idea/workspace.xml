@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="feat: added mobile menu">
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: fixed mobile menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CartModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CartModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libraries/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/category/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/category/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673632260693</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="fix: fixed mobile menu">
+      <created>1673634049372</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1673634049372</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +341,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added libraries to package.json" />
     <MESSAGE value="getServerSideProps -&gt; getStaticprops" />
     <MESSAGE value="added dynamic product page, fixed data fetching from sanity" />
     <MESSAGE value="fixed media preview, netlify build fix" />
@@ -365,7 +365,8 @@
     <MESSAGE value="feat: finished up cart" />
     <MESSAGE value="feat: fadded link to logo, added remove from cart on back to home button" />
     <MESSAGE value="feat: added mobile menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added mobile menu" />
+    <MESSAGE value="fix: fixed mobile menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed mobile menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -22,6 +22,7 @@ const StyledContainer = styled("div", {
   position: "absolute",
   top: "$headerHeight",
   // display: "grid",
+  overflow: "hidden",
   transform: "200ms",
   background: "rgba(0, 0, 0, 0.5)",
   height: "calc(100vh)",
@@ -146,17 +147,24 @@ export const Header: FC<HeaderProps> = ({ header, siteConfiguration }) => {
   const { cartItems, getQuantity } = useShoppingCartContext();
   const cartQuantity = getQuantity();
 
+  function closeModal() {
+    setIsModalOpen(false);
+  }
+
+  function openModal() {
+    setIsModalOpen(true);
+  }
+
+  useEffect(() => {
+    if (isMobileMenuOpen) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "visible";
+  }, [isMobileMenuOpen]);
+
   useEffect(() => {
     setMounted(true);
   }, []);
 
   if (!mounted) return null;
-
-  function closeModal() {
-    setIsModalOpen(false);
-  }
-
-  console.log("siteConfiguration: (header)", siteConfiguration);
 
   return (
     <StickyHeaderContainer>
@@ -189,7 +197,7 @@ export const Header: FC<HeaderProps> = ({ header, siteConfiguration }) => {
               })}
             </MenuContainerDesktop>
           )}
-          <CartContainer onClick={() => setIsModalOpen(true)}>
+          <CartContainer onClick={openModal}>
             <CartIcon />
             <CartQuantity>{cartQuantity}</CartQuantity>
           </CartContainer>
