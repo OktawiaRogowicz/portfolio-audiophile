@@ -18,7 +18,7 @@ const StickyHeaderContainer = styled("div", {
 });
 
 const StyledContainer = styled("div", {
-  zIndex: -1,
+  zIndex: 1,
   position: "absolute",
   top: "$headerHeight",
   overflow: "hidden",
@@ -32,12 +32,14 @@ const StyledContainer = styled("div", {
         opacity: 1,
         "@lg": {
           visibility: "none",
+          pointerEvents: "none",
         },
       },
       false: {
         opacity: 0,
         visibility: "none",
         transitionDelay: "400ms",
+        pointerEvents: "none",
       },
     },
   },
