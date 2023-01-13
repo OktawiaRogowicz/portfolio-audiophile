@@ -8,16 +8,14 @@ const ContentStyled = styled("div", {
   margin: "auto",
   overflowY: "auto",
   borderRadius: "10px",
-  ["fade"]: {
-    [`&.base`]: {
-      opacity: 0,
-    },
-    [`&.after-open`]: {
-      opacity: 1,
-    },
-    [`&.before-close`]: {
-      opacity: 0,
-    },
+  [`&.base`]: {
+    opacity: 0,
+  },
+  [`&.after-open`]: {
+    opacity: 1,
+  },
+  [`&.before-close`]: {
+    opacity: 0,
   },
 });
 
@@ -32,8 +30,8 @@ export const Content = React.forwardRef<HTMLDivElement, ContentProps>(
   (
     {
       children,
-      openTime,
-      closeTime,
+      openTime = 400,
+      closeTime = 200,
       margin = "auto",
       onRequestClose,
       ...restProps

@@ -33,7 +33,7 @@ export type OverlayProps = ComponentPropsWithRef<"div"> & {
 };
 
 export const Overlay = React.forwardRef<HTMLDivElement, OverlayProps>(
-  ({ openTime, closeTime, children, ...restProps }, ref) => {
+  ({ openTime = 200, closeTime = 400, children, ...restProps }, ref) => {
     return (
       <OverlayStyled
         {...restProps}

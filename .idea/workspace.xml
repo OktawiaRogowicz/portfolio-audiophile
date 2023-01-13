@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: updated cart quantity font color">
-      <change afterPath="$PROJECT_DIR$/web/libraries/icons/Close.tsx" afterDir="false" />
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: added close cart button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CartModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CartModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Modal/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Modal/Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Modal/Overlay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Modal/Overlay.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673637007864</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="fix: added close cart button">
+      <created>1673638181388</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1673638181388</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +363,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed media preview, netlify build fix" />
     <MESSAGE value="fallback" />
     <MESSAGE value="[slug] fix" />
     <MESSAGE value="feat: stitches, header" />
@@ -381,7 +387,8 @@
     <MESSAGE value="fix: fixed mobile menu" />
     <MESSAGE value="feat: scrolling now impossible when mobile menu is open" />
     <MESSAGE value="fix: updated cart quantity font color" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: updated cart quantity font color" />
+    <MESSAGE value="fix: added close cart button" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: added close cart button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
