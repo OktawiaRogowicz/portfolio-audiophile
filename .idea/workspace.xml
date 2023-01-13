@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: fixed mobile menu">
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="feat: scrolling now impossible when mobile menu is open">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libraries/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Header.tsx" afterDir="false" />
     </list>
@@ -310,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673634049372</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="feat: scrolling now impossible when mobile menu is open">
+      <created>1673635091762</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1673635091762</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +348,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="getServerSideProps -&gt; getStaticprops" />
     <MESSAGE value="added dynamic product page, fixed data fetching from sanity" />
     <MESSAGE value="fixed media preview, netlify build fix" />
     <MESSAGE value="fallback" />
@@ -366,7 +372,8 @@
     <MESSAGE value="feat: fadded link to logo, added remove from cart on back to home button" />
     <MESSAGE value="feat: added mobile menu" />
     <MESSAGE value="fix: fixed mobile menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed mobile menu" />
+    <MESSAGE value="feat: scrolling now impossible when mobile menu is open" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: scrolling now impossible when mobile menu is open" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

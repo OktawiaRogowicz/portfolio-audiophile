@@ -114,6 +114,7 @@ const CartContainer = styled(StyledClickable, {
   alignItems: "end",
   justifyContent: "end",
   textAlign: "end",
+  color: "$black",
   "&:hover": {
     color: "$white !important",
   },
