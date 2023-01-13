@@ -6,14 +6,18 @@ import { ShoppingCartProvider } from "../libraries/context/shoppingCartContext";
 
 export default function App({ Component, pageProps }) {
   globalStyles();
+  console.log("pageprops: ", pageProps);
   return (
     <ShoppingCartProvider>
       <Header
-        header={pageProps.header}
+        header={pageProps.siteConfiguration.header}
         siteConfiguration={pageProps.siteConfiguration}
       />
       <Component {...pageProps} />
-      <Footer footer={pageProps.footer} header={pageProps.header} />
+      <Footer
+        footer={pageProps.siteConfiguration.footer}
+        header={pageProps.siteConfiguration.header}
+      />
     </ShoppingCartProvider>
   );
 }
@@ -23,7 +27,7 @@ App.getInitialProps = async () => {
 
   try {
     const siteConfiguration = await getSiteConfiguration();
-    pageProps = siteConfiguration;
+    pageProps = { siteConfiguration };
   } catch (error) {}
 
   return { pageProps };

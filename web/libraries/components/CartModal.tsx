@@ -67,7 +67,8 @@ export const CartModal: FC<CartModalProps> = ({
   closeModal,
   cartItems,
 }) => {
-  const { cartTotalPrice, removeAllFromCart } = useShoppingCartContext();
+  const { cartTotalPrice, removeAllFromCart, getQuantity } =
+    useShoppingCartContext();
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
@@ -84,7 +85,7 @@ export const CartModal: FC<CartModalProps> = ({
     >
       <Root>
         <Heading>
-          <Title>Cart ({cartItems.length})</Title>
+          <Title>Cart ({getQuantity()})</Title>
           {cartItems && cartItems.length !== 0 && (
             <RemoveAllButton
               onClick={() => removeAllFromCart()}

@@ -19,6 +19,7 @@ interface Props {
 }
 
 const Product = ({ product, siteConfiguration }: Props) => {
+  console.log("siteConfiguration: (product)", product, siteConfiguration);
   return (
     <Container backgroundColor={"white"}>
       <GoBackButton />
@@ -26,9 +27,7 @@ const Product = ({ product, siteConfiguration }: Props) => {
       <FeaturesDescription product={product} />
       <Gallery product={product} />
       <Recommendations product={product} />
-      <CategoriesMini
-        miniCategories={siteConfiguration.siteConfiguration.miniCategories}
-      />
+      <CategoriesMini miniCategories={siteConfiguration.miniCategories} />
       <SectionImageAndContent
         sectionImageAndContentSettings={
           siteConfiguration.siteConfiguration.sectionImageAndContent
@@ -82,11 +81,9 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const { slug = "" } = context.params;
   const product = await client.fetch(query, { slug });
-  const siteConfiguration = await getSiteConfiguration();
   return {
     props: {
       product,
-      siteConfiguration,
     },
   };
 }

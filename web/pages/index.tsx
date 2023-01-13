@@ -7,21 +7,27 @@ import { SectionImageAndContent } from "../libraries/components/SectionImageAndC
 import { SectionProductsFeatured } from "../libraries/components/Homepage/SectionProductsFeatured/SectionProductsFeatured";
 
 interface Props {
-  siteConfiguration: SiteConfiguration["siteConfiguration"];
+  siteConfiguration: SiteConfiguration;
 }
 
 const Home = ({ siteConfiguration }: Props) => {
-  console.log("siteConfiguration: ", siteConfiguration);
+  console.log("siteConfiguration: (index)", siteConfiguration);
   return (
     <Container backgroundColor={"transparent"}>
-      <SectionHero sectionHeroSettings={siteConfiguration.sectionHero} />
-      <CategoriesMini miniCategories={siteConfiguration.miniCategories} />
+      <SectionHero
+        sectionHeroSettings={siteConfiguration.siteConfiguration.sectionHero}
+      />
+      <CategoriesMini
+        miniCategories={siteConfiguration.siteConfiguration.miniCategories}
+      />
       <SectionProductsFeatured
-        productsFeatured={siteConfiguration.sectionProductsFeatured}
+        productsFeatured={
+          siteConfiguration.siteConfiguration.sectionProductsFeatured
+        }
       />
       <SectionImageAndContent
         sectionImageAndContentSettings={
-          siteConfiguration.sectionImageAndContent
+          siteConfiguration.siteConfiguration.sectionImageAndContent
         }
       />
     </Container>
@@ -29,11 +35,8 @@ const Home = ({ siteConfiguration }: Props) => {
 };
 
 async function getStaticProps() {
-  const siteConfiguration = await getSiteConfiguration();
   return {
-    props: {
-      siteConfiguration,
-    },
+    props: {},
   };
 }
 

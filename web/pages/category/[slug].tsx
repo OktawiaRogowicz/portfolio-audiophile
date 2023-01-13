@@ -22,6 +22,7 @@ interface Props {
 }
 
 const Category = ({ category, siteConfiguration }: Props) => {
+  console.log("siteConfiguration (category): ", category, siteConfiguration);
   return (
     <>
       <CategoryHeader categoryName={category.name} />
@@ -72,11 +73,9 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const { slug = "" } = context.params;
   const category = await client.fetch(query, { slug });
-  const siteConfiguration = await getSiteConfiguration();
   return {
     props: {
       category,
-      siteConfiguration,
     },
   };
 }

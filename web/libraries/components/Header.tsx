@@ -156,7 +156,7 @@ export const Header: FC<HeaderProps> = ({ header, siteConfiguration }) => {
     setIsModalOpen(false);
   }
 
-  console.log("siteConfiguration: ", siteConfiguration);
+  console.log("siteConfiguration: (header)", siteConfiguration);
 
   return (
     <StickyHeaderContainer>
@@ -205,7 +205,9 @@ export const Header: FC<HeaderProps> = ({ header, siteConfiguration }) => {
           <MobileMenu backgroundColor={"white"}>
             <CategoriesMini
               margin={"none"}
-              miniCategories={siteConfiguration.miniCategories}
+              miniCategories={
+                siteConfiguration.siteConfiguration.miniCategories
+              }
             />
           </MobileMenu>
         </MobileMenuBackground>

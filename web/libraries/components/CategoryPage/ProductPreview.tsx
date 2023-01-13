@@ -23,7 +23,8 @@ const MediaContainer = styled("div", {
   backgroundColor: "$gray",
   justifyContent: "center",
   alignItems: "center",
-  borderRadius: "$r1",
+  borderRadius: "10px",
+  overflow: "hidden",
   "@lg": {
     justifyContent: "right",
     marginRight: "0",
