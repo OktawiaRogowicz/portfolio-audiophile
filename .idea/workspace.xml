@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="feat: scrolling now impossible when mobile menu is open">
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: updated cart quantity font color">
+      <change afterPath="$PROJECT_DIR$/web/libraries/icons/Close.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/CartModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CartModal.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/libraries/helpers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/libraries/icons" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -60,8 +61,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/libraries/helpers" />
       <recent name="$PROJECT_DIR$/web/libraries/icons" />
+      <recent name="$PROJECT_DIR$/web/libraries/helpers" />
       <recent name="$PROJECT_DIR$/web/icons" />
       <recent name="$PROJECT_DIR$/web/libs/styles/src/lib" />
       <recent name="$PROJECT_DIR$/web" />
@@ -317,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673635091762</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fix: updated cart quantity font color">
+      <created>1673637007863</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1673637007864</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +356,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added dynamic product page, fixed data fetching from sanity" />
     <MESSAGE value="fixed media preview, netlify build fix" />
     <MESSAGE value="fallback" />
     <MESSAGE value="[slug] fix" />
@@ -373,7 +380,8 @@
     <MESSAGE value="feat: added mobile menu" />
     <MESSAGE value="fix: fixed mobile menu" />
     <MESSAGE value="feat: scrolling now impossible when mobile menu is open" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: scrolling now impossible when mobile menu is open" />
+    <MESSAGE value="fix: updated cart quantity font color" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: updated cart quantity font color" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

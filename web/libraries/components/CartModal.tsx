@@ -9,6 +9,7 @@ import {
 import { CartProductPreview } from "./CheckoutPage/Cart/CartProductPreview";
 import { PriceDetail } from "./Price/PriceDetail";
 import { Link } from "./Link";
+import { Close } from "../icons/Close";
 
 const Root = styled("div", {
   display: "grid",
@@ -32,6 +33,10 @@ const Title = styled("div", {
   projectFont: "heading06",
 });
 
+const CloseButton = styled(StyledClickable, {
+  color: "$black05",
+});
+
 const RemoveAllButton = styled(StyledClickable, {
   projectFont: "body01",
   textDecoration: "underline",
@@ -45,6 +50,7 @@ const CartProductsPreview = styled("div", {
 
 const PriceDetails = styled("div", {
   display: "grid",
+  gridAutoRows: "1fr",
   gap: "$8",
   projectFont: "body01",
 });
@@ -86,11 +92,9 @@ export const CartModal: FC<CartModalProps> = ({
       <Root>
         <Heading>
           <Title>Cart ({getQuantity()})</Title>
-          {cartItems && cartItems.length !== 0 && (
-            <RemoveAllButton
-              onClick={() => removeAllFromCart()}
-            >{`Remove all`}</RemoveAllButton>
-          )}
+          <CloseButton onClick={closeModal}>
+            <Close />
+          </CloseButton>
         </Heading>
         {cartItems.length > 0 && (
           <CartProductsPreview>
@@ -111,6 +115,9 @@ export const CartModal: FC<CartModalProps> = ({
         ) : (
           <>
             <PriceDetails>
+              <RemoveAllButton
+                onClick={() => removeAllFromCart()}
+              >{`Remove all`}</RemoveAllButton>
               <PriceDetail
                 label={"Total"}
                 price={cartTotalPrice}
