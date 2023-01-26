@@ -3,6 +3,7 @@ import { styled } from "../../styles/stitches";
 import { SectionWrapper } from "../SectionWrapper";
 import Media from "../Media";
 import { Link } from "../Link";
+import { Product } from "../../models/product";
 
 const Root = styled("div", {
   display: "grid",
@@ -54,11 +55,10 @@ const ProductImage = styled("div", {
 });
 
 export type RecommendationsProps = {
-  product: any;
+  product: Product;
 };
 
 export const Recommendations: FC<RecommendationsProps> = ({ product }) => {
-  console.log("recommendations: ", product.recommendations);
   return (
     <SectionWrapper margin={"M"}>
       <Root>

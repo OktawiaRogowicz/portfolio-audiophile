@@ -2,8 +2,9 @@ import { FC } from "react";
 import { ProductPreview } from "./ProductPreview";
 import { SectionWrapper } from "../SectionWrapper";
 import { styled } from "../../styles/stitches";
+import { Product } from "../../models/product";
 export type ProductPreviewsProps = {
-  products: any;
+  products: Product[];
 };
 
 const Root = styled("div", {

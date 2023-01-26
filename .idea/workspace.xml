@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: added fade to modal/content">
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: header mobile - fixed overlay clickability problem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/FeaturesDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/FeaturesDescription.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/Gallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/Recommendations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/Recommendations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/models/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/models/product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/category/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/category/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673638386576</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="fix: header mobile - fixed overlay clickability problem">
+      <created>1673641432835</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1673641432835</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +384,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[slug] fix" />
     <MESSAGE value="feat: stitches, header" />
     <MESSAGE value="feat: added section image and content, features description, gallery, mini categories, section wrapper, recommendations, getSiteConfiguration" />
     <MESSAGE value="feat: added sectionHero" />
@@ -394,7 +408,8 @@
     <MESSAGE value="fix: updated cart quantity font color" />
     <MESSAGE value="fix: added close cart button" />
     <MESSAGE value="fix: added fade to modal/content" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: added fade to modal/content" />
+    <MESSAGE value="fix: header mobile - fixed overlay clickability problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: header mobile - fixed overlay clickability problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

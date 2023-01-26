@@ -5,18 +5,13 @@ import { CategoryHeader } from "../../libraries/components/CategoryHeader";
 import { ProductPreviews } from "../../libraries/components/CategoryPage/ProductPreviews";
 import { CategoriesMini } from "../../libraries/components/CategoriesMini";
 import { SectionImageAndContent } from "../../libraries/components/SectionImageAndContent";
-import { getSiteConfiguration } from "../../libraries/services/getSiteConfiguration";
 import { SiteConfiguration } from "../../libraries/models/site-configuration";
+import { Product } from "../../libraries/models/product";
 
 interface Props {
   category: {
     name: string;
-    products: {
-      name: string;
-      slug: {
-        current: string;
-      };
-    }[];
+    products: Product[];
   };
   siteConfiguration: SiteConfiguration;
 }

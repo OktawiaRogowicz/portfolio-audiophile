@@ -23,5 +23,7 @@ export type Product = {
     title: string;
   }[];
   gallery: any[];
-  recommendations: Product[];
+  recommendations: {
+    recommendation: Product;
+  }[];
 };

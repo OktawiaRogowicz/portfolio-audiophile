@@ -7,19 +7,16 @@ import { Gallery } from "../../libraries/components/ProductPage/Gallery";
 import { Recommendations } from "../../libraries/components/ProductPage/Recommendations";
 import GoBackButton from "../../libraries/components/Buttons/GoBackButton";
 import { SectionImageAndContent } from "../../libraries/components/SectionImageAndContent";
-import { getSiteConfiguration } from "../../libraries/services/getSiteConfiguration";
 import { SiteConfiguration } from "../../libraries/models/site-configuration";
 import { CategoriesMini } from "../../libraries/components/CategoriesMini";
+import { Product } from "../../libraries/models/product";
 
 interface Props {
-  product: {
-    name: string;
-  };
+  product: Product;
   siteConfiguration: SiteConfiguration;
 }
 
 const Product = ({ product, siteConfiguration }: Props) => {
-  console.log("siteConfiguration: (product)", product, siteConfiguration);
   return (
     <Container backgroundColor={"white"}>
       <GoBackButton />
@@ -27,7 +24,9 @@ const Product = ({ product, siteConfiguration }: Props) => {
       <FeaturesDescription product={product} />
       <Gallery product={product} />
       <Recommendations product={product} />
-      <CategoriesMini miniCategories={siteConfiguration.miniCategories} />
+      <CategoriesMini
+        miniCategories={siteConfiguration.siteConfiguration.miniCategories}
+      />
       <SectionImageAndContent
         sectionImageAndContentSettings={
           siteConfiguration.siteConfiguration.sectionImageAndContent

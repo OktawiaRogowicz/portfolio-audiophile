@@ -5,6 +5,7 @@ import Media from "../Media";
 import StyledNumberInput from "../StyledNumberInput";
 import { StyledClickable } from "../StyledClickable";
 import { useShoppingCartContext } from "../../context/shoppingCartContext";
+import { Product } from "../../models/product";
 
 const Root = styled("div", {
   display: "grid",
@@ -100,7 +101,7 @@ const LinkContainer = styled("div", {
 });
 
 export type ProductDetailsProps = {
-  product: any;
+  product: Product;
 };
 
 export const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
