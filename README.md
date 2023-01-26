@@ -8,7 +8,7 @@
   </a>
 </div>
 
-<h2 align="center">:headphones: <code>4. audiophile e-commerce website</code> :headphones:</h2>
+<h2 align="center">:headphones: <code>5. audiophile e-commerce website</code> :headphones:</h2>
 
 <div align="center">
 This is a solution to the <a href="https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx">Audiophile e-commerce website challenge on Frontend Mentor</a>! 
