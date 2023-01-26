@@ -3,7 +3,7 @@ import { PortableText } from "@portabletext/react";
 import Media from "../Media";
 import { Link } from "../Link";
 import { styled } from "../../styles/stitches";
-import { Product } from "../../models/product";
+import { ProductType } from "../../models/productType";
 
 const Root = styled("div", {
   display: "grid",
@@ -124,7 +124,7 @@ const LinkContainer = styled("div", {
 });
 
 export type ProductPreviewProps = {
-  product: Product;
+  product: ProductType;
   position?: number;
 };
 

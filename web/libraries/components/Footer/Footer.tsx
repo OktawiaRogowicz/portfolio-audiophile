@@ -5,6 +5,8 @@ import { Container } from "../Container";
 import Media from "../Media";
 import { Link } from "../Link";
 import { FooterMenu } from "./FooterMenu";
+import { FooterType } from "../../models/footerType";
+import { headerType } from "../../models/headerType";
 
 const Root = styled("div", {
   display: "grid",
@@ -75,12 +77,8 @@ const SocialMediaContainer = styled("div", {
 });
 
 export type FooterProps = {
-  header: any;
-  footer: {
-    description: any;
-    copyright: any;
-    socialMedia: any;
-  };
+  header: headerType;
+  footer: FooterType;
 };
 
 export const Footer: FC<FooterProps> = ({ header, footer }) => {
@@ -99,7 +97,7 @@ export const Footer: FC<FooterProps> = ({ header, footer }) => {
               return (
                 <Link
                   key={`socialMedia-${index}`}
-                  href={"/test"}
+                  href={"/"}
                   appearance={"plain"}
                 >
                   <Media image={item.logo.image} />

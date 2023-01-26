@@ -4,6 +4,7 @@ import { ArrowIcon } from "../icons/ArrowIcon";
 import { Link } from "./Link";
 import { SectionWrapper, SectionWrapperMarginType } from "./SectionWrapper";
 import { styled } from "../styles/stitches";
+import { SiteConfiguration } from "../models/site-configuration";
 
 const Root = styled("div", {
   display: "grid",
@@ -65,7 +66,7 @@ const MiniCategoryImage = styled("div", {
 
 export type CategoriesMiniProps = {
   margin?: SectionWrapperMarginType;
-  miniCategories: any;
+  miniCategories: SiteConfiguration["siteConfiguration"]["miniCategories"];
 };
 
 export const CategoriesMini: FC<CategoriesMiniProps> = ({

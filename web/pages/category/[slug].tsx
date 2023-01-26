@@ -6,13 +6,13 @@ import { ProductPreviews } from "../../libraries/components/CategoryPage/Product
 import { CategoriesMini } from "../../libraries/components/CategoriesMini";
 import { SectionImageAndContent } from "../../libraries/components/SectionImageAndContent";
 import { SiteConfiguration } from "../../libraries/models/site-configuration";
-import { Product } from "../../libraries/models/product";
+import { ProductType } from "../../libraries/models/productType";
+import { ImageType } from "../../libraries/models/image";
+import { RecommendationsType } from "../../libraries/models/recommendationsType";
+import { CategoryType } from "../../libraries/models/categoryType";
 
 interface Props {
-  category: {
-    name: string;
-    products: Product[];
-  };
+  category: CategoryType;
   siteConfiguration: SiteConfiguration;
 }
 
