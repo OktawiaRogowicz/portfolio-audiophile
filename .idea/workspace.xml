@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: fixed types">
-      <change afterPath="$PROJECT_DIR$/web/libraries/models/categoryType.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libraries/models/footerType.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libraries/models/headerType.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libraries/models/image.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/libraries/models/recommendationsType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readmeImages/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemas/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio/schemas/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoriesMini.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoriesMini.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Footer/FooterMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Footer/FooterMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/FeaturesDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/FeaturesDescription.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/Gallery.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/Recommendations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/Recommendations.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/context/shoppingCartContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/context/shoppingCartContext.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/models/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/models/productType.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/models/site-configuration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/models/site-configuration.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/category/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/category/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/product/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,11 +74,11 @@
       <recent name="$PROJECT_DIR$/web" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/readmeImages" />
       <recent name="$PROJECT_DIR$/web/libraries/components/Inputs" />
       <recent name="$PROJECT_DIR$/web/libraries/components/CheckoutPage" />
       <recent name="$PROJECT_DIR$/web/libraries/services" />
       <recent name="$PROJECT_DIR$/web/libraries/components" />
-      <recent name="$PROJECT_DIR$/web/libraries" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -385,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674732543473</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fix: fixed types">
+      <created>1674736406941</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1674736406941</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
