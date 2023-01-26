@@ -26,7 +26,6 @@ export type SectionProductsFeaturedProps = {
 export const SectionProductsFeatured: FC<SectionProductsFeaturedProps> = ({
   productsFeatured,
 }) => {
-  console.log("productsFeatured: ", productsFeatured);
   return (
     <SectionWrapper>
       <Root>

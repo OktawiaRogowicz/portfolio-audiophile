@@ -11,7 +11,6 @@ interface Props {
 }
 
 const Home = ({ siteConfiguration }: Props) => {
-  console.log("siteConfiguration: (index)", siteConfiguration);
   return (
     <Container backgroundColor={"transparent"}>
       <SectionHero

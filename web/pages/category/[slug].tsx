@@ -22,7 +22,6 @@ interface Props {
 }
 
 const Category = ({ category, siteConfiguration }: Props) => {
-  console.log("siteConfiguration (category): ", category, siteConfiguration);
   return (
     <>
       <CategoryHeader categoryName={category.name} />

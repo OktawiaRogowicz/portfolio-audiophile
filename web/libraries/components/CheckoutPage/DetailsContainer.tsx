@@ -81,8 +81,6 @@ export const DetailsContainer: FC<DetailsContainerProps> = ({ control }) => {
     setSelectedPayment(event.target.value);
   };
 
-  console.log("selectedPayment", selectedPayment);
-
   return (
     <Root>
       <Title>Checkout</Title>

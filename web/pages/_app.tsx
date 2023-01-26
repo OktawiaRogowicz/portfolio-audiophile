@@ -6,7 +6,6 @@ import { ShoppingCartProvider } from "../libraries/context/shoppingCartContext";
 
 export default function App({ Component, pageProps }) {
   globalStyles();
-  console.log("pageprops: ", pageProps);
   return (
     <ShoppingCartProvider>
       <Header
