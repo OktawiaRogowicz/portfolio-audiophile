@@ -9,10 +9,10 @@ import GoBackButton from "../../libraries/components/Buttons/GoBackButton";
 import { SectionImageAndContent } from "../../libraries/components/SectionImageAndContent";
 import { SiteConfiguration } from "../../libraries/models/site-configuration";
 import { CategoriesMini } from "../../libraries/components/CategoriesMini";
-import { Product } from "../../libraries/models/product";
+import { ProductType } from "../../libraries/models/productType";
 
 interface Props {
-  product: Product;
+  product: ProductType;
   siteConfiguration: SiteConfiguration;
 }
 

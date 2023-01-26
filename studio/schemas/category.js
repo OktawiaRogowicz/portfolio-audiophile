@@ -25,19 +25,6 @@ export default {
       title: "Image",
       type: "media",
     },
-    {
-      title: "You might also like",
-      name: "recommendations",
-      type: "array",
-      of: [
-        {
-          title: "Recommendation",
-          name: "recommendation",
-          type: "reference",
-          to: [{ type: "product" }],
-        },
-      ],
-    },
   ],
   preview: {
     select: {

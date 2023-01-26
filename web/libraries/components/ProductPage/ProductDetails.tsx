@@ -5,7 +5,7 @@ import Media from "../Media";
 import StyledNumberInput from "../StyledNumberInput";
 import { StyledClickable } from "../StyledClickable";
 import { useShoppingCartContext } from "../../context/shoppingCartContext";
-import { Product } from "../../models/product";
+import { ProductType } from "../../models/productType";
 
 const Root = styled("div", {
   display: "grid",
@@ -101,7 +101,7 @@ const LinkContainer = styled("div", {
 });
 
 export type ProductDetailsProps = {
-  product: Product;
+  product: ProductType;
 };
 
 export const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
@@ -114,6 +114,8 @@ export const ProductDetails: FC<ProductDetailsProps> = ({ product }) => {
   const handleSubtract = () => {
     if (quantity > 1) setQuantity((prev) => prev - 1);
   };
+
+  console.log("product: ", product, product.image);
 
   return (
     <Root>

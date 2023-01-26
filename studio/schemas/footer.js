@@ -31,6 +31,11 @@ export default {
               title: "Logo",
               type: "media",
             },
+            {
+              name: "href",
+              title: "Link to media",
+              type: "string",
+            },
           ],
         },
       ],

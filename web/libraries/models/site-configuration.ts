@@ -1,34 +1,33 @@
+import { ProductType } from "./productType";
+import { FooterType } from "./footerType";
 import { PortableTextProps } from "@portabletext/react";
-import { Product } from "./product";
+import { ImageType } from "./image";
+import { headerType } from "./headerType";
 
 export type SiteConfiguration = {
-  header: any;
-  footer: {
-    description: PortableTextProps["blocks"];
-    copyright: string;
-    socialMedia: any;
-  };
+  header: headerType;
+  footer: FooterType;
   siteConfiguration: {
     sectionHero: {
-      product: Product;
-      description: SanityBlockContentProps["blocks"];
+      product: ProductType;
+      description: PortableTextProps["blocks"];
     };
     sectionProductsFeatured: {
-      bigHighlight: Product;
-      description: SanityBlockContentProps["blocks"];
-      mediumHighlight: Product;
-      smallHighlight: Product;
+      bigHighlight: ProductType;
+      description: PortableTextProps["blocks"];
+      mediumHighlight: ProductType;
+      smallHighlight: ProductType;
     };
     sectionImageAndContent: {
       title: string;
-      description: SanityBlockContentProps["blocks"];
-      image: any;
+      description: PortableTextProps["blocks"];
+      image: ImageType;
     };
     miniCategories: {
       link: {
         href: string;
         name: string;
-        image: any;
+        image: ImageType;
       };
     }[];
   };

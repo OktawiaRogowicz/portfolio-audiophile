@@ -3,6 +3,8 @@ import { styled } from "../../styles/stitches";
 import { Container } from "../Container";
 import Media from "../Media";
 import { Link } from "../Link";
+import { ImageType } from "../../models/image";
+import { headerType } from "../../models/headerType";
 
 const Root = styled("div", {
   display: "grid",
@@ -48,10 +50,7 @@ const MenuItem = styled("div", {
 });
 
 export type FooterMenuProps = {
-  header: {
-    logo: any;
-    menu: any[];
-  };
+  header: headerType;
 };
 
 export const FooterMenu: FC<FooterMenuProps> = ({ header }) => {

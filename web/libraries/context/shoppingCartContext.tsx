@@ -6,10 +6,10 @@ import {
   useState,
 } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
-import { Product } from "../models/product";
+import { ProductType } from "../models/productType";
 
 export type CartItemType = {
-  product: Product;
+  product: ProductType;
   quantity: number;
 };
 
@@ -17,7 +17,7 @@ export type ShoppingCartContextType = {
   openCart: () => void;
   closeCart: () => void;
   getItemQuantity: (id: number) => number;
-  increaseCartQuantity: (product: Product, quantity: number) => void;
+  increaseCartQuantity: (product: ProductType, quantity: number) => void;
   decreaseCartQuantity: (id: number) => void;
   removeFromCart: (id: number) => void;
   removeAllFromCart: () => void;
@@ -59,7 +59,7 @@ export const ShoppingCartProvider: FC<PropsWithChildren> = ({ children }) => {
     return cartItems.find((item) => item.product.id === id)?.quantity || 0;
   }
 
-  function increaseCartQuantity(product: Product, quantity: number) {
+  function increaseCartQuantity(product: ProductType, quantity: number) {
     setCartItems((currItems) => {
       if (currItems.find((item) => item.product.id === product.id) == null) {
         return [...currItems, { product, quantity: quantity }];

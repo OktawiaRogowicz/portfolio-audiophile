@@ -2,10 +2,10 @@ import { FC } from "react";
 import { styled } from "../../styles/stitches";
 import { PortableText } from "@portabletext/react";
 import { SectionWrapper } from "../SectionWrapper";
-import { Product } from "../../models/product";
+import { ProductType } from "../../models/productType";
 
 export type FeaturesDescriptionProps = {
-  product: Product;
+  product: ProductType;
 };
 
 const Root = styled("div", {

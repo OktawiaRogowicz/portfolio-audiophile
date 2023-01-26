@@ -10,6 +10,8 @@ import { CartModal } from "./CartModal";
 import { useShoppingCartContext } from "../context/shoppingCartContext";
 import { CategoriesMini } from "./CategoriesMini";
 import { SiteConfiguration } from "../models/site-configuration";
+import { ImageType } from "../models/image";
+import { headerType } from "../models/headerType";
 
 const StickyHeaderContainer = styled("div", {
   zIndex: "100",
@@ -147,10 +149,7 @@ const CartQuantity = styled("div", {
 });
 
 export type HeaderProps = {
-  header: {
-    logo: any;
-    menu: any[];
-  };
+  header: headerType;
   siteConfiguration: SiteConfiguration;
 };
 

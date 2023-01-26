@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: header mobile - fixed overlay clickability problem">
+    <list default="true" id="a95975b1-57c9-4b40-a96d-6d75fe7bbc38" name="Changes" comment="fix: fixed types">
+      <change afterPath="$PROJECT_DIR$/web/libraries/models/categoryType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/models/footerType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/models/headerType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/models/image.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/libraries/models/recommendationsType.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/schemas/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studio/schemas/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/studio/schemas/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoriesMini.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoriesMini.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/CategoryPage/ProductPreviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Footer/FooterMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Footer/FooterMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/FeaturesDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/FeaturesDescription.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/Gallery.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/ProductDetails.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/libraries/components/ProductPage/Recommendations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/components/ProductPage/Recommendations.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/libraries/models/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/models/product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/context/shoppingCartContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/context/shoppingCartContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/models/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/models/productType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/libraries/models/site-configuration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/libraries/models/site-configuration.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/pages/category/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/category/[slug].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/product/[slug].tsx" afterDir="false" />
     </list>
@@ -23,12 +36,17 @@
       <list>
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -353,7 +371,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673641432835</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="fix: deleted console.logs">
+      <created>1674732496965</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1674732496965</updated>
+    </task>
+    <task id="LOCAL-00039" summary="fix: fixed types">
+      <created>1674732543472</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1674732543473</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,8 +416,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: stitches, header" />
-    <MESSAGE value="feat: added section image and content, features description, gallery, mini categories, section wrapper, recommendations, getSiteConfiguration" />
     <MESSAGE value="feat: added sectionHero" />
     <MESSAGE value="feat: added highlights on main page" />
     <MESSAGE value="fix: @sanity/block-content-to-react" />
@@ -409,7 +439,9 @@
     <MESSAGE value="fix: added close cart button" />
     <MESSAGE value="fix: added fade to modal/content" />
     <MESSAGE value="fix: header mobile - fixed overlay clickability problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: header mobile - fixed overlay clickability problem" />
+    <MESSAGE value="fix: deleted console.logs" />
+    <MESSAGE value="fix: fixed types" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed types" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -421,6 +453,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/web/libraries/components/Homepage/SectionHero.tsx</url>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/web/libraries/models/footerType.ts</url>
+          <line>4</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

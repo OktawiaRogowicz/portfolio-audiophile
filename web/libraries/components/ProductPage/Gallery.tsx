@@ -2,10 +2,10 @@ import { FC } from "react";
 import { styled } from "../../styles/stitches";
 import Media from "../Media";
 import { SectionWrapper } from "../SectionWrapper";
-import { Product } from "../../models/product";
+import { ProductType } from "../../models/productType";
 
 export type GalleryProps = {
-  product: Product;
+  product: ProductType;
 };
 
 const Root = styled("div", {

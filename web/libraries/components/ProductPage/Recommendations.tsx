@@ -3,7 +3,7 @@ import { styled } from "../../styles/stitches";
 import { SectionWrapper } from "../SectionWrapper";
 import Media from "../Media";
 import { Link } from "../Link";
-import { Product } from "../../models/product";
+import { ProductType } from "../../models/productType";
 
 const Root = styled("div", {
   display: "grid",
@@ -55,7 +55,7 @@ const ProductImage = styled("div", {
 });
 
 export type RecommendationsProps = {
-  product: Product;
+  product: ProductType;
 };
 
 export const Recommendations: FC<RecommendationsProps> = ({ product }) => {
