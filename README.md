@@ -2,66 +2,67 @@
 
 <div align="center">
   <a href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef">
-    <img src="https://github.com/OktawiaRogowicz/sunnyside-agency/blob/main/sunnyside-agency-landing-page-main/img_3.png"
+    <img src="https://github.com/OktawiaRogowicz/portfolio-audiophile/blob/main/readmeImages/img.png"
       alt="Frontend mentor challenge"
       width="300"/>
   </a>
 </div>
 
-<h2 align="center">:sunny: <code>1. sunnyside agency landing page</code> :sunny:</h2>
+<h2 align="center">:headphones: <code>4. audiophile e-commerce website</code> :headphones:</h2>
 
 <div align="center">
-This is a solution to the <a href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef">Sunnyside agency landing page challenge on Frontend Mentor</a>! 
+This is a solution to the <a href="https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx">Audiophile e-commerce website challenge on Frontend Mentor</a>! 
 
 
-For my first ever encounter with Frontend Mentor, as well as one of first projects made with React, I chose something that seemed quick and easy to finish - just to test my skills and to see if the format of learning was good for me. As it turns out, I liked it a lot, and the results can be seen below!
+To sum up skills gained at work in headless e-commerce, I've decided to pick up a design for an e-commerce website, so I could use Stitches, TypeScript, Next.js and set Sanity up as CMS. 
 
 .
 
-<strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/sunnyside-agency/"><strong>LIVE SITE</strong></a>
+<strong>Netlify</strong>: <a href="https://audiophile-e-commerce-oktawiarogowicz.netlify.app/"><strong>LIVE SITE</strong></a>
 </div>
 
 <h1><code>Overview</code></h1>
 
-> Users should be able to:
+>Users should be able to:
 >
->- View the optimal layout for the site depending on their device's screen size
+>- View the optimal layout for the app depending on their device's screen size
 >- See hover states for all interactive elements on the page
+>- Add/Remove products from the cart
+>- Edit product quantities in the cart
+>- Fill in all fields in the checkout
+>- Receive form validations if fields are missed or incorrect during checkout
+>- See correct checkout totals depending on the products in the cart
+>- Shipping always adds $50 to the order
+>- VAT is calculated as 20% of the product total, excluding shipping
+>- See an order confirmation modal after checking out with an order summary
+>- Bonus: Keep track of what's in the cart, even after refreshing the browser (localStorage could be used for this if you're not building out a full-stack app)
 
 
 
 <div align="center">
-  <img src="https://github.com/OktawiaRogowicz/sunnyside-agency/blob/main/sunnyside-agency-landing-page-main/img_4.png"
-    alt="Screenshot" width="300"/>
-    <img src="https://github.com/OktawiaRogowicz/sunnyside-agency/blob/main/sunnyside-agency-landing-page-main/img_5.png"
-    alt="Screenshot" width="300"/>
-    <img src="https://github.com/OktawiaRogowicz/sunnyside-agency/blob/main/sunnyside-agency-landing-page-main/img_6.png"
-    alt="Screenshot" width="300"/>
-    <img src="https://github.com/OktawiaRogowicz/sunnyside-agency/blob/main/sunnyside-agency-landing-page-main/img_7.png"
-    alt="Screenshot" width="300"/>
-    <img src="https://github.com/OktawiaRogowicz/sunnyside-agency/blob/main/sunnyside-agency-landing-page-main/img_8.png"
-    alt="Screenshot" width="300"/>
+  <img src="https://github.com/OktawiaRogowicz/portfolio-audiophile/blob/main/readmeImages/img_1.png"
+    alt="Screenshot" height="600"/>
+    <img src="https://github.com/OktawiaRogowicz/portfolio-audiophile/blob/main/readmeImages/img_2.png"
+    alt="Screenshot" height="600"/>
+    <img src="https://github.com/OktawiaRogowicz/portfolio-audiophile/blob/main/readmeImages/img_3.png"
+    alt="Screenshot" height="600"/>
 </div>
 
 
 
 <div align="center">
-  HTML <strong>||</strong> CSS <strong>||</strong> flexbox <strong>||</strong> React <strong>||</strong> Styled components
+  HTML <strong>||</strong> CSS <strong>||</strong> React <strong>||</strong> TypeScript <strong>||</strong> Stitches
 
-<strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/sunnyside-agency/"><strong>LIVE SITE</strong></a>
+<strong>Netlify</strong>: <a href="https://audiophile-e-commerce-oktawiarogowicz.netlify.app/"><strong>LIVE SITE</strong></a>
 </div>
 
 ### What I learned
 
-The challenge I picked allowed me to quickly and easilly test my knowledge, allowing me to focus on building the website quickly. I focused on React and Styled components, using mostly flexbox - however, in the future, I want to build a website based on a CSS grid. It was also a good practice on responsive websites - even though everything works as it should, I will definitelly work on making the code more readable and accessable once I get to know good practices better.
+Even though I've worked with Next.js, Stitches and Sanity for a while, I've never started a project from the scratch before. I've had to build up reusable components and architecture, which for sure was a valuable learning process. 
 
 ### Continued development
 
-As this project was still one of my first projects made with React, I want to focus on clean code and good practice - especially once I get feedback on the code, so I can visit it back again.
-
-When it comes to things I would love to get to know, styled components and React are still on this list. However, I would also love to include an API of some sort in my future project, as well as at some point, get to know Vue.js.
-
-Reasons above are the reason why for my next challange, I picked <a href="https://github.com/OktawiaRogowicz/ip-address-tracker"><strong>2. IP Address Tracker</strong></a>.
+It is a big project with many possible future developments. The first things I would love to change would probably be adding a page builder: something that is possible with Sanity and requires a lot of resources, but I think would be a great test for me as a developer.
 
 <h1><code>Author</code></h1>
 
